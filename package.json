@@ -1,0 +1,71 @@
+{
+  "name": "@inclusive-design/firm",
+  "version": "1.0.0",
+  "description": "Design system for the FIRM project.",
+  "main": "eleventy.config.js",
+  "type": "module",
+  "scripts": {
+    "build": "npm-run-all -l clean -s build:eleventy",
+    "build:eleventy": "eleventy",
+    "clean": "rimraf _site",
+    "debug": "DEBUG=Eleventy* eleventy",
+    "dev": "cross-env NODE_ENV=development eleventy --serve",
+    "lint": "run-s -l lint:*",
+    "lint:eslint": "eslint",
+    "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "start": "npm-run-all -l clean dev",
+    "prepare": "husky",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/inclusive-design/firm.git"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "elena",
+    "eleventy",
+    "sugarcube"
+  ],
+  "author": "OCAD University <idrc@ocadu.ca>",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/inclusive-design/firm/issues"
+  },
+  "homepage": "https://github.com/inclusive-design/firm#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-navigation": "^1.0.0",
+    "@11ty/eleventy-plugin-vite": "^8.0.0",
+    "eleventy-plugin-vento": "^5.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
+    "@inclusive-design/eslint-config": "^0.5.0",
+    "@inclusive-design/markdownlint-config": "^0.1.0",
+    "@inclusive-design/stylelint-config": "^0.1.0",
+    "cross-env": "^10.0.0",
+    "eslint": "^10.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^16.0.0",
+    "markdownlint-cli2": "^0.22.0",
+    "npm-run-all2": "^8.0.0",
+    "rimraf": "^6.0.0",
+    "stylelint": "^17.0.0"
+  },
+  "lint-staged": {
+    "*.css": [
+      "stylelint --fix"
+    ],
+    "*.{cjs,js,json,mjs}": [
+      "eslint --fix"
+    ],
+    "*.md": [
+      "eslint --fix",
+      "markdownlint-cli2 --fix"
+    ]
+  }
+}
