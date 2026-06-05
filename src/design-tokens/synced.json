@@ -1882,12 +1882,33 @@
       }
     }
   },
+  "elevation": {
+    "z": {
+      "$type": "number",
+      "raised": {
+        "$value": 1
+      },
+      "dropdown": {
+        "$value": 50
+      },
+      "modal": {
+        "$value": 100
+      },
+      "tooltip": {
+        "$value": 150
+      },
+      "notification": {
+        "$value": 200
+      }
+    }
+  },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
       "colors",
       "dark",
-      "typography"
+      "typography",
+      "elevation"
     ]
   }
 }
