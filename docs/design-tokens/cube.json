@@ -1,0 +1,42 @@
+{
+  "cluster-gap": {
+    "$value": "{space.fluid.sm}",
+    "$description": "Base gap spacing for cluster composition"
+  },
+  "grid-gap": {
+    "$value": "{space.fluid.md}",
+    "$description": "Default gap for grid composition"
+  },
+  "repel-gap": {
+    "$value": "{space.fluid.md}",
+    "$description": "Default gap for repel composition"
+  },
+  "sidebar-gap": {
+    "$value": "{space.fluid.md}",
+    "$description": "Default gap for sidebar composition"
+  },
+  "switcher-gap": {
+    "$value": "{space.fluid.md}",
+    "$description": "Default gap for switcher composition"
+  },
+  "region-space": {
+    "$value": "{space.fluid.xl}",
+    "$description": "Base vertical padding for page sections"
+  },
+  "wrapper-max-width": {
+    "$value": "{container.8xl}",
+    "$description": "Max width for wrapper composition"
+  },
+  "wrapper-padding-inline": {
+    "$value": "{space.fluid.lg-6xl}",
+    "$description": "Inline padding for wrapper composition"
+  },
+  "sidebar-content-min-width": {
+    "$type": "dimension",
+    "$value": {
+      "value": 37.5,
+      "unit": "rem"
+    },
+    "$description": "Min width for sidebar content"
+  }
+}

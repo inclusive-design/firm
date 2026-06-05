@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-ca">
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }} | FIRM Design System</title>
+    <script type="module" src="/assets/scripts/main.js"></script>
+    <link href="/assets/styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="wrapper switcher step--1">
+            <div>
+                <a rel="external" href="https://idrc.ocadu.ca/">
+                    An Inclusive Design Research Centre Project
+                </a>
+            </div>
+            <ul role="list" data-grow="false">
+                <li>
+                    <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page">English</a>
+                </li>
+                <li>
+                    <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper flow">
+        <h1>{{ title }}</h1>
+        {{ content }}
+        </div>
+    </main>
+    <footer class="region">
+        <div class="wrapper">
+        <p>Here is the footer.</p>
+        </div>
+    </footer>
+</body>
+</html>

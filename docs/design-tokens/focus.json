@@ -1,0 +1,27 @@
+{
+  "focus": {
+    "ring": {
+      "color": {
+        "$value": "{color.primary.400}"
+      },
+      "offset": {
+        "$type": "dimension",
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      "width": {
+        "$type": "dimension",
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "style": {
+        "$type": "strokeStyle",
+        "$value": "solid"
+      }
+    }
+  }
+}
