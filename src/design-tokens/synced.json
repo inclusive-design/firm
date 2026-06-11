@@ -851,6 +851,16 @@
           },
           "value": "{color.gold.900}",
           "type": "color"
+        },
+        "border": {
+          "$extensions": {
+            "com.figma.scopes": [
+              "ALL_SCOPES"
+            ],
+            "com.figma.hiddenFromPublishing": false
+          },
+          "value": "{color.wheel.900}",
+          "type": "color"
         }
       },
       "attention": {
@@ -1199,6 +1209,84 @@
             "value": "{color.primary.600}",
             "type": "color"
           }
+        },
+        "global": {
+          "surface": {
+            "surface": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.neutral.750}",
+              "type": "color"
+            },
+            "skipto": {
+              "surface": {
+                "$extensions": {
+                  "com.figma.scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "com.figma.hiddenFromPublishing": false
+                },
+                "value": "{color.primary.500}",
+                "type": "color"
+              },
+              "content": {
+                "$extensions": {
+                  "com.figma.scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "com.figma.hiddenFromPublishing": false
+                },
+                "value": "{color.neutral.800}",
+                "type": "color"
+              }
+            },
+            "content": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.white}",
+              "type": "color"
+            },
+            "pref": {
+              "surface": {
+                "$extensions": {
+                  "com.figma.scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "com.figma.hiddenFromPublishing": false
+                },
+                "value": "{color.white}",
+                "type": "color"
+              },
+              "content": {
+                "$extensions": {
+                  "com.figma.scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "com.figma.hiddenFromPublishing": false
+                },
+                "value": "{color.neutral.800}",
+                "type": "color"
+              },
+              "border": {
+                "$extensions": {
+                  "com.figma.scopes": [
+                    "ALL_SCOPES"
+                  ],
+                  "com.figma.hiddenFromPublishing": false
+                },
+                "value": "{color.neutral.800}",
+                "type": "color"
+              }
+            }
+          }
         }
       },
       "main": {
@@ -1319,94 +1407,100 @@
       },
       "action": {
         "content": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
+          "default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "TEXT_FILL"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.neutral.800}",
+            "type": "color"
           },
-          "value": "{color.neutral.800}",
-          "type": "color"
+          "focus": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.primary.400}",
+            "type": "color"
+          },
+          "hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.neutral.800}",
+            "type": "color"
+          }
         },
         "surface": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
+          "default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.primary.500}",
+            "type": "color"
           },
-          "value": "{color.primary.500}",
-          "type": "color"
-        },
-        "content-focus": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
+          "focus": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.grey.800}",
+            "type": "color"
           },
-          "value": "{color.primary.400}",
-          "type": "color"
-        },
-        "content-hover": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.800}",
-          "type": "color"
-        },
-        "surface-focus": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.grey.800}",
-          "type": "color"
-        },
-        "border-focus": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.primary.400}",
-          "type": "color"
-        },
-        "border-hover": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.800}",
-          "type": "color"
-        },
-        "surface-hover": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.primary.500}",
-          "type": "color"
+          "hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.primary.500}",
+            "type": "color"
+          }
         },
         "border": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
+          "focus": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.primary.400}",
+            "type": "color"
           },
-          "value": "{color.primary.500}",
-          "type": "color"
+          "hover": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.neutral.800}",
+            "type": "color"
+          },
+          "default": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.primary.500}",
+            "type": "color"
+          }
         }
       },
       "footer": {
@@ -1420,17 +1514,7 @@
           "value": "{color.neutral.800}",
           "type": "color"
         },
-        "text": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.75}",
-          "type": "color"
-        },
-        "action": {
+        "content": {
           "$extensions": {
             "com.figma.scopes": [
               "ALL_SCOPES"
@@ -1441,27 +1525,147 @@
           "type": "color"
         }
       },
-      "global-nav": {
-        "surface": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.750}",
-          "type": "color"
-        },
-        "skip to": {
+      "diagram": {
+        "quadrant": {
           "surface": {
-            "$extensions": {
-              "com.figma.scopes": [
-                "ALL_SCOPES"
-              ],
-              "com.figma.hiddenFromPublishing": false
+            "high": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.pyramid.300}",
+              "type": "color"
             },
-            "value": "{color.primary.500}",
-            "type": "color"
+            "medium": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.primary.400}",
+              "type": "color"
+            },
+            "low": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.wheel.500}",
+              "type": "color"
+            }
+          },
+          "content": {
+            "high": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.neutral.850}",
+              "type": "color"
+            },
+            "medium": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.neutral.850}",
+              "type": "color"
+            },
+            "low": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.neutral.850}",
+              "type": "color"
+            }
+          }
+        },
+        "wheel": {
+          "line": {
+            "dashed": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.neutral.850}",
+              "type": "color"
+            },
+            "outline": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.gold.700}",
+              "type": "color"
+            },
+            "arrow": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.red.600}",
+              "type": "color"
+            }
+          },
+          "surface": {
+            "light": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.wheel.100}",
+              "type": "color"
+            },
+            "medium": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.gold.300}",
+              "type": "color"
+            },
+            "dark": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.wheel.500}",
+              "type": "color"
+            },
+            "label": {
+              "$extensions": {
+                "com.figma.scopes": [
+                  "ALL_SCOPES"
+                ],
+                "com.figma.hiddenFromPublishing": false
+              },
+              "value": "{color.neutral.50}",
+              "type": "color"
+            }
           },
           "content": {
             "$extensions": {
@@ -1470,39 +1674,39 @@
               ],
               "com.figma.hiddenFromPublishing": false
             },
-            "value": "{color.neutral.800}",
+            "value": "{color.neutral.850}",
             "type": "color"
           }
         },
-        "content": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.white}",
-          "type": "color"
-        },
-        "pref": {
-          "surface": {
+        "gaps": {
+          "neutral dark": {
             "$extensions": {
               "com.figma.scopes": [
                 "ALL_SCOPES"
               ],
               "com.figma.hiddenFromPublishing": false
             },
-            "value": "{color.white}",
+            "value": "{color.neutral.300}",
             "type": "color"
           },
-          "content": {
+          "neutral medium": {
             "$extensions": {
               "com.figma.scopes": [
                 "ALL_SCOPES"
               ],
               "com.figma.hiddenFromPublishing": false
             },
-            "value": "{color.neutral.800}",
+            "value": "{color.neutral.200}",
+            "type": "color"
+          },
+          "neutral light": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.neutral.75}",
             "type": "color"
           },
           "border": {
@@ -1512,325 +1716,129 @@
               ],
               "com.figma.hiddenFromPublishing": false
             },
-            "value": "{color.neutral.800}",
+            "value": "{color.neutral.500}",
+            "type": "color"
+          },
+          "can access outline": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.green.500}",
+            "type": "color"
+          },
+          "may access outline": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.wheel.700}",
+            "type": "color"
+          },
+          "not able to access outline": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.grey.850}",
+            "type": "color"
+          },
+          "red dark": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.attention.200}",
+            "type": "color"
+          },
+          "red medium": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.attention.100}",
+            "type": "color"
+          },
+          "red light": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.white}",
+            "type": "color"
+          },
+          "can access area": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.alpha.green.400}",
+            "type": "color"
+          },
+          "may access area": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.alpha.gold.500}",
+            "type": "color"
+          },
+          "not able to access area": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.alpha.white}",
+            "type": "color"
+          },
+          "may access dot": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.wheel.500}",
+            "type": "color"
+          },
+          "narrative outline": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.black}",
+            "type": "color"
+          },
+          "not able to access dot": {
+            "$extensions": {
+              "com.figma.scopes": [
+                "ALL_SCOPES"
+              ],
+              "com.figma.hiddenFromPublishing": false
+            },
+            "value": "{color.attention.500}",
             "type": "color"
           }
-        }
-      },
-      "quadrant diagram": {
-        "high surface": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.pyramid.300}",
-          "type": "color"
-        },
-        "med surface": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.primary.400}",
-          "type": "color"
-        },
-        "low surface": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.wheel.500}",
-          "type": "color"
-        },
-        "high content": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.850}",
-          "type": "color"
-        },
-        "med content": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.850}",
-          "type": "color"
-        },
-        "low content": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.850}",
-          "type": "color"
-        }
-      },
-      "wheel diagram": {
-        "dashed line": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.850}",
-          "type": "color"
-        },
-        "light": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.wheel.100}",
-          "type": "color"
-        },
-        "medium": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.gold.300}",
-          "type": "color"
-        },
-        "dark": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.wheel.500}",
-          "type": "color"
-        },
-        "slice outliine": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.gold.700}",
-          "type": "color"
-        },
-        "border": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.wheel.900}",
-          "type": "color"
-        },
-        "arrow": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.red.600}",
-          "type": "color"
-        },
-        "label background": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.50}",
-          "type": "color"
-        },
-        "content": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.850}",
-          "type": "color"
-        }
-      },
-      "gap mapping": {
-        "neutral dark": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.300}",
-          "type": "color"
-        },
-        "neutral medium": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.200}",
-          "type": "color"
-        },
-        "neutral light": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.75}",
-          "type": "color"
-        },
-        "border": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.neutral.500}",
-          "type": "color"
-        },
-        "can access outline": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.green.500}",
-          "type": "color"
-        },
-        "may access outline": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.wheel.700}",
-          "type": "color"
-        },
-        "not able to access outline": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.grey.850}",
-          "type": "color"
-        },
-        "red dark": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.attention.200}",
-          "type": "color"
-        },
-        "red medium": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.attention.100}",
-          "type": "color"
-        },
-        "red light": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.white}",
-          "type": "color"
-        },
-        "can access area": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.alpha.green.400}",
-          "type": "color"
-        },
-        "may access area": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.alpha.gold.500}",
-          "type": "color"
-        },
-        "not able to access area": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.alpha.white}",
-          "type": "color"
-        },
-        "may access dot": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.wheel.500}",
-          "type": "color"
-        },
-        "narrative outline": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.black}",
-          "type": "color"
-        },
-        "not able to access dot": {
-          "$extensions": {
-            "com.figma.scopes": [
-              "ALL_SCOPES"
-            ],
-            "com.figma.hiddenFromPublishing": false
-          },
-          "value": "{color.attention.500}",
-          "type": "color"
         }
       }
     }
