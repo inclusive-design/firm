@@ -48,9 +48,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -103,79 +103,179 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
   "space/max": {
+    "100": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": ""
+    },
+    "150": {
+      "$type": "dimension",
+      "$value": "6px",
+      "$description": ""
+    },
+    "200": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": ""
+    },
+    "300": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": ""
+    },
+    "400": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": ""
+    },
+    "450": {
+      "$type": "dimension",
+      "$value": "18px",
+      "$description": ""
+    },
+    "500": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": ""
+    },
+    "600": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": ""
+    },
+    "800": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": ""
+    },
+    "1000": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": ""
+    },
+    "1200": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": ""
+    },
+    "1400": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": ""
+    },
+    "1600": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": ""
+    },
+    "1800": {
+      "$type": "dimension",
+      "$value": "72px",
+      "$description": ""
+    },
+    "2000": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": ""
+    },
+    "3000": {
+      "$type": "dimension",
+      "$value": "120px",
+      "$description": ""
+    },
+    "5600": {
+      "$type": "dimension",
+      "$value": "224px",
+      "$description": ""
+    },
     "fluid": {
       "xs": {
         "$type": "dimension",
-        "$value": "{spacing.500}",
+        "$value": "{space.500}",
         "$description": ""
       },
       "s": {
         "$type": "dimension",
-        "$value": "{spacing.800}",
+        "$value": "{space.800}",
         "$description": ""
       },
       "m": {
         "$type": "dimension",
-        "$value": "{spacing.1200}",
+        "$value": "{space.1200}",
         "$description": ""
       },
       "l": {
         "$type": "dimension",
-        "$value": "{spacing.2000}",
+        "$value": "{space.2000}",
         "$description": ""
       },
       "xl": {
         "$type": "dimension",
-        "$value": "{spacing.3000}",
+        "$value": "{space.3000}",
         "$description": ""
       },
-      "margin padding": {
+      "margin-padding": {
         "$type": "dimension",
-        "$value": "{spacing.5600}",
+        "$value": "{space.5600}",
         "$description": ""
       },
       "2xs": {
         "$type": "dimension",
-        "$value": "{spacing.300}",
+        "$value": "{space.300}",
         "$description": ""
       }
+    },
+    "050": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": ""
+    },
+    "025": {
+      "$type": "dimension",
+      "$value": "1px",
+      "$description": ""
+    },
+    "000": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": ""
     },
     "fixed": {
       "xs": {
         "$type": "dimension",
-        "$value": "{spacing.300}",
+        "$value": "{space.300}",
         "$description": ""
       },
       "s": {
         "$type": "dimension",
-        "$value": "{spacing.400}",
+        "$value": "{space.400}",
         "$description": ""
       },
       "m": {
         "$type": "dimension",
-        "$value": "{spacing.600}",
+        "$value": "{space.600}",
         "$description": ""
       },
       "l": {
         "$type": "dimension",
-        "$value": "{spacing.800}",
+        "$value": "{space.800}",
         "$description": ""
       },
       "xl": {
         "$type": "dimension",
-        "$value": "{spacing.1000}",
+        "$value": "{space.1000}",
         "$description": ""
       },
       "2xl": {
         "$type": "dimension",
-        "$value": "{spacing.1200}",
+        "$value": "{space.1200}",
         "$description": ""
       }
     },
@@ -190,79 +290,179 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
   "space/min": {
+    "100": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$description": ""
+    },
+    "150": {
+      "$type": "dimension",
+      "$value": "6px",
+      "$description": ""
+    },
+    "200": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$description": ""
+    },
+    "300": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$description": ""
+    },
+    "400": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": ""
+    },
+    "450": {
+      "$type": "dimension",
+      "$value": "18px",
+      "$description": ""
+    },
+    "500": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$description": ""
+    },
+    "600": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$description": ""
+    },
+    "800": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": ""
+    },
+    "1000": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$description": ""
+    },
+    "1200": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": ""
+    },
+    "1400": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": ""
+    },
+    "1600": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$description": ""
+    },
+    "1800": {
+      "$type": "dimension",
+      "$value": "72px",
+      "$description": ""
+    },
+    "2000": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$description": ""
+    },
+    "3000": {
+      "$type": "dimension",
+      "$value": "120px",
+      "$description": ""
+    },
+    "5600": {
+      "$type": "dimension",
+      "$value": "224px",
+      "$description": ""
+    },
     "fluid": {
       "xs": {
         "$type": "dimension",
-        "$value": "{spacing.300}",
+        "$value": "{space.300}",
         "$description": ""
       },
       "s": {
         "$type": "dimension",
-        "$value": "{spacing.400}",
+        "$value": "{space.400}",
         "$description": ""
       },
       "m": {
         "$type": "dimension",
-        "$value": "{spacing.600}",
+        "$value": "{space.600}",
         "$description": ""
       },
       "l": {
         "$type": "dimension",
-        "$value": "{spacing.800}",
+        "$value": "{space.800}",
         "$description": ""
       },
       "xl": {
         "$type": "dimension",
-        "$value": "{spacing.1200}",
+        "$value": "{space.1200}",
         "$description": ""
       },
-      "margin padding": {
+      "margin-padding": {
         "$type": "dimension",
-        "$value": "{spacing.800}",
+        "$value": "{space.800}",
         "$description": ""
       },
       "2xs": {
         "$type": "dimension",
-        "$value": "{spacing.200}",
+        "$value": "{space.200}",
         "$description": ""
       }
+    },
+    "050": {
+      "$type": "dimension",
+      "$value": "2px",
+      "$description": ""
+    },
+    "025": {
+      "$type": "dimension",
+      "$value": "1px",
+      "$description": ""
+    },
+    "000": {
+      "$type": "dimension",
+      "$value": "0px",
+      "$description": ""
     },
     "fixed": {
       "xs": {
         "$type": "dimension",
-        "$value": "{spacing.300}",
+        "$value": "{space.300}",
         "$description": ""
       },
       "s": {
         "$type": "dimension",
-        "$value": "{spacing.400}",
+        "$value": "{space.400}",
         "$description": ""
       },
       "m": {
         "$type": "dimension",
-        "$value": "{spacing.600}",
+        "$value": "{space.600}",
         "$description": ""
       },
       "l": {
         "$type": "dimension",
-        "$value": "{spacing.800}",
+        "$value": "{space.800}",
         "$description": ""
       },
       "xl": {
         "$type": "dimension",
-        "$value": "{spacing.1000}",
+        "$value": "{space.1000}",
         "$description": ""
       },
       "2xl": {
         "$type": "dimension",
-        "$value": "{spacing.1200}",
+        "$value": "{space.1200}",
         "$description": ""
       }
     },
@@ -277,9 +477,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -1774,9 +1974,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -3301,9 +3501,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -4798,9 +4998,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -6295,9 +6495,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -7792,9 +7992,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -9289,9 +9489,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -10786,9 +10986,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -12283,9 +12483,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -13780,9 +13980,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15277,9 +15477,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15385,187 +15585,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
-      }
-    }
-  },
-  "spacing": {
-    "100": {
-      "$type": "dimension",
-      "$value": "4px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "150": {
-      "$type": "dimension",
-      "$value": "6px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "200": {
-      "$type": "dimension",
-      "$value": "8px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "300": {
-      "$type": "dimension",
-      "$value": "12px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "400": {
-      "$type": "dimension",
-      "$value": "16px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "450": {
-      "$type": "dimension",
-      "$value": "18px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "500": {
-      "$type": "dimension",
-      "$value": "20px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "600": {
-      "$type": "dimension",
-      "$value": "24px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "800": {
-      "$type": "dimension",
-      "$value": "32px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "1000": {
-      "$type": "dimension",
-      "$value": "40px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "1200": {
-      "$type": "dimension",
-      "$value": "48px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "1400": {
-      "$type": "dimension",
-      "$value": "56px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "1600": {
-      "$type": "dimension",
-      "$value": "64px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "1800": {
-      "$type": "dimension",
-      "$value": "72px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "2000": {
-      "$type": "dimension",
-      "$value": "80px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "3000": {
-      "$type": "dimension",
-      "$value": "120px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "5600": {
-      "$type": "dimension",
-      "$value": "224px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "050": {
-      "$type": "dimension",
-      "$value": "2px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "025": {
-      "$type": "dimension",
-      "$value": "1px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "000": {
-      "$type": "dimension",
-      "$value": "0px",
-      "$description": "",
-      "$extensions": {
-        "mode": {}
-      }
-    },
-    "$extensions": {
-      "tokens-bruecke-meta": {
-        "useDTCGKeys": true,
-        "colorMode": "rgba-object",
-        "variableCollections": [
-          "responsive",
-          "aliases",
-          "colors",
-          "borders",
-          "typography",
-          "palette",
-          "spacing"
-        ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15607,9 +15629,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15681,9 +15703,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15739,9 +15761,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15773,9 +15795,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15807,9 +15829,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   },
@@ -15857,9 +15879,9 @@
           "borders",
           "typography",
           "palette",
-          "spacing"
+          "space"
         ],
-        "createdAt": "2026-06-12T16:55:25.987Z"
+        "createdAt": "2026-06-12T17:09:48.077Z"
       }
     }
   }
