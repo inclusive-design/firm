@@ -4,17 +4,23 @@
   "description": "Design system for the FIRM project.",
   "main": "eleventy.config.js",
   "type": "module",
+  "workspaces": [
+    "packages/components"
+  ],
   "scripts": {
-    "build": "npm-run-all -l clean -s build:eleventy",
+    "build": "npm-run-all clean -s build:eleventy",
     "build:eleventy": "eleventy",
+    "build:lib": "npm run build --workspace=packages/components",
     "clean": "rimraf _site",
     "debug": "DEBUG=Eleventy* eleventy",
-    "dev": "cross-env NODE_ENV=development eleventy --serve",
+    "generate:styles": "sugarcube generate --watch",
     "lint": "run-s -l lint:*",
     "lint:eslint": "eslint",
     "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
     "lint:stylelint": "stylelint \"**/*.css\"",
-    "start": "npm-run-all -l clean dev",
+    "start": "npm-run-all clean -p watch:eleventy",
+    "watch:eleventy": "cross-env NODE_ENV=development eleventy --serve",
+    "watch:lib": "npm run watch --workspace=packages/components",
     "prepare": "husky",
     "test": "node --test"
   },
@@ -39,16 +45,17 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-navigation": "^1.0.0",
     "@11ty/eleventy-plugin-vite": "^8.0.0",
-    "@elenajs/core": "^1.0.0",
-    "eleventy-plugin-vento": "^5.0.0"
+    "eleventy-plugin-vento": "^5.0.0",
+    "hex-to-oklch": "^3.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
-    "@elenajs/bundler": "^1.0.0",
     "@inclusive-design/eslint-config": "^0.5.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
     "@inclusive-design/stylelint-config": "^0.1.0",
+    "@sugarcube-sh/cli": "^0.1.14",
+    "@sugarcube-sh/vite": "^0.1.15",
     "cross-env": "^10.0.0",
     "eslint": "^10.0.0",
     "husky": "^9.0.0",

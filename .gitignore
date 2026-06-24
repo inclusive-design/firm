@@ -1,2 +1,5 @@
+.zed
+dist
 _site
 node_modules
+packages/components/dist

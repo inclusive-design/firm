@@ -1,0 +1,51 @@
+.button {
+    --_padding-block: 0.65em;
+    --_padding-inline: 0.75em;
+    --_form-control-height: round(calc(2 * var(--fi-_padding-block) + 1em * 1.25), 1px);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font: inherit;
+    font-size: var(--fi-form-control-font-size, var(--fi-text-base));
+    border-color: transparent;
+    padding-block: 0;
+    background-color: var(--fi-color-fill-loud, var(--fi-color-neutral-fill-loud));
+    border-radius: var(--fi-form-control-radius);
+    border-style: var(--fi-border-style);
+    border-width: var(--fi-form-control-border-width);
+    box-shadow: var(--fi-shadow-xs);
+    color: var(--fi-color-on-loud, var(--fi-color-neutral-on-normal));
+    font-weight: var(--fi-font-weight-medium);
+    gap: var(--fi-space-2xs);
+    min-height: var(--fi-_form-control-height);
+    padding-inline: var(--fi-_padding-inline);
+    transition-property: color, background-color, border-color;
+    transition-timing-function: var(--fi-ease-out);
+    transition-duration: var(--fi-transition-normal);
+}
+
+.button:hover {
+    background-color: color-mix(
+        in oklab,
+        var(--fi-color-fill-loud, var(--fi-color-neutral-fill-loud)),
+        var(--fi-color-mix-hover, black 5%)
+    );
+}
+
+.button:active {
+    background-color: color-mix(
+        in oklab,
+        var(--fi-color-fill-loud, var(--fi-color-neutral-fill-loud)),
+        var(--fi-color-mix-active, black 10%)
+    );
+}
+
+.button:focus-visible {
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--fi-color-fill-loud) 25%, transparent);
+    outline: none;
+    border-color: var(--fi-color-fill-loud);
+}

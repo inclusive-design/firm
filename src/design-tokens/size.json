@@ -1,0 +1,36 @@
+{
+  "size": {
+    "$type": "dimension",
+    "fluid": {
+      "$extensions": {
+        "sh.sugarcube": {
+          "scale": {
+            "mode": "exponential",
+            "viewport": {
+              "min": 320,
+              "max": 1440
+            },
+            "base": {
+              "min": {
+                "value": 1,
+                "unit": "rem"
+              },
+              "max": {
+                "value": 1.375,
+                "unit": "rem"
+              }
+            },
+            "ratio": {
+              "min": 1.2,
+              "max": 1.25
+            },
+            "steps": {
+              "negative": 1,
+              "positive": 5
+            }
+          }
+        }
+      }
+    }
+  }
+}

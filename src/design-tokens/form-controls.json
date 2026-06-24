@@ -1,0 +1,49 @@
+{
+  "form-control": {
+    "activated-color": {
+      "$value": "{color.primary.400}"
+    },
+    "background-color": {
+      "$value": "{color.white}"
+    },
+    "border-width": {
+      "$value": "{border.width.thin}"
+    },
+    "border-style": {
+      "$value": "{border.style}"
+    },
+    "border-color": {
+      "$value": "{color.action.border.default}"
+    },
+    "radius": {
+      "$value": "{radius.lg}"
+    },
+    "line-height": {
+      "$value": "{leading.normal}"
+    },
+    "font-size": {
+      "$value": "{text.sm}"
+    },
+    "placeholder-color": {
+      "$value": "{color.action.content.default}"
+    },
+    "toggle-size": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1.25,
+        "unit": "rem"
+      }
+    },
+    "value-color": {
+      "$value": "{color.action.content.default}"
+    },
+    "label": {
+      "color": {
+        "$value": "{color.action.content.default}"
+      },
+      "line-height": {
+        "$value": "{leading.tight}"
+      }
+    }
+  }
+}

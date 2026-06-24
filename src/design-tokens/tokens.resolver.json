@@ -1,0 +1,88 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "version": "2025.10",
+  "resolutionOrder": [
+    {
+      "type": "set",
+      "name": "base",
+      "sources": [
+        {
+          "$ref": "./palette.json"
+        },
+        {
+          "$ref": "./aliases.json"
+        },
+        {
+          "$ref": "./colors.json"
+        },
+        {
+          "$ref": "./size.json"
+        },
+        {
+          "$ref": "./space.json"
+        },
+        {
+          "$ref": "./typography.json"
+        }
+      ]
+    },
+    {
+      "type": "modifier",
+      "name": "theme",
+      "default": "light",
+      "contexts": {
+        "light": [],
+        "dark": [
+          {
+            "$ref": "./themes/dark.json"
+          }
+        ],
+        "uio": [
+          {
+            "$ref": "./themes/uio.json"
+          }
+        ],
+        "bw": [
+          {
+            "$ref": "./themes/bw.json"
+          }
+        ],
+        "wb": [
+          {
+            "$ref": "./themes/wb.json"
+          }
+        ],
+        "by": [
+          {
+            "$ref": "./themes/by.json"
+          }
+        ],
+        "yb": [
+          {
+            "$ref": "./themes/yb.json"
+          }
+        ],
+        "gd": [
+          {
+            "$ref": "./themes/gd.json"
+          }
+        ],
+        "gw": [
+          {
+            "$ref": "./themes/gw.json"
+          }
+        ],
+        "lgdg": [
+          {
+            "$ref": "./themes/lgdg.json"
+          }
+        ],
+        "bbr": [
+          {
+            "$ref": "./themes/bbr.json"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+src/design-tokens/*/*.json
+!src/design-tokens/design.tokens.json

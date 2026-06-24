@@ -1,0 +1,116 @@
+{
+  "font": {
+    "body": {
+      "$value": "{font.serif}"
+    },
+    "display-alt": {
+      "$value": "{font.serif-alt}"
+    },
+    "display": {
+      "$value": "{font.sans}"
+    },
+    "sans": {
+      "$value": "Mulish"
+    },
+    "serif": {
+      "$value": "Merriweather"
+    },
+    "serif-alt": {
+      "$value": "Diphylleia"
+    },
+    "weight": {
+      "normal": {
+        "$value": 400
+      },
+      "medium": {
+        "$value": 500
+      },
+      "semibold": {
+        "$value": 600
+      },
+      "bold": {
+        "$value": 700
+      },
+      "extrabold": {
+        "$value": 800
+      },
+      "$type": "fontWeight"
+    },
+    "$type": "fontFamily"
+  },
+  "text": {
+    "sm": {
+      "$value": "{size.fluid.-1}"
+    },
+    "base": {
+      "$value": "{size.fluid.0}"
+    },
+    "lg": {
+      "$value": "{size.fluid.1}"
+    },
+    "xl": {
+      "$value": "{size.fluid.2}"
+    },
+    "2xl": {
+      "$value": "{size.fluid.3}"
+    },
+    "3xl": {
+      "$value": "{size.fluid.4}"
+    },
+    "4xl": {
+      "$value": "{size.fluid.5}"
+    },
+    "$type": "dimension"
+  },
+  "heading": {
+    "1": {
+      "$value": "{text.4xl}"
+    },
+    "2": {
+      "$value": "{text.3xl}"
+    },
+    "3": {
+      "$value": "{text.2xl}"
+    },
+    "4": {
+      "$value": "{text.xl}"
+    },
+    "5": {
+      "$value": "{text.lg}"
+    },
+    "$type": "dimension"
+  },
+  "body": {
+    "small": {
+      "$value": "{text.sm}"
+    },
+    "default": {
+      "$value": "{text.base}"
+    },
+    "$type": "dimension"
+  },
+  "diagram": {
+    "label": {
+      "$value": "{text.sm}"
+    },
+    "default": {
+      "$value": "{text.base}"
+    },
+    "$type": "dimension"
+  },
+  "leading": {
+    "relaxed": {
+      "$value": 1.6
+    },
+    "normal": {
+      "$value": 1.4
+    },
+    "tight": {
+      "$value": 1.2
+    },
+    "none": {
+      "$value": 1
+    },
+    "$type": "number"
+  }
+}

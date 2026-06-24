@@ -1,0 +1,59 @@
+{
+  "space": {
+    "$type": "dimension",
+    "fluid": {
+      "$extensions": {
+        "sh.sugarcube": {
+          "scale": {
+            "mode": "multipliers",
+            "viewport": {
+              "min": 320,
+              "max": 1440
+            },
+            "base": {
+              "min": {
+                "value": 1,
+                "unit": "rem"
+              },
+              "max": {
+                "value": 2,
+                "unit": "rem"
+              }
+            },
+            "multipliers": {
+              "2xs": 0.625,
+              "xs": 0.75,
+              "sm": 1,
+              "md": 1.5,
+              "lg": 2,
+              "xl": 2.5,
+              "2xl": 3,
+              "3xl": 3.75,
+              "4xl": 4.375,
+              "5xl": 6,
+              "6xl": 7,
+              "7xl": 14
+            },
+            "pairs": [
+              "2xs-xs",
+              "xs-sm",
+              "sm-md",
+              "md-lg",
+              "lg-xl",
+              "xl-2xl",
+              "2xl-3xl",
+              "3xl-4xl",
+              "4xl-5xl",
+              "5xl-6xl",
+              "6xl-7xl",
+              "xs-2xs",
+              "lg-6xl",
+              "4xl-lg",
+              "5xl-3xl"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

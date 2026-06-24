@@ -1,0 +1,20 @@
+{
+  "color": {
+    "uio": {
+      "content": {
+        "$value": "{color.yellow.400}"
+      },
+      "surface": {
+        "$value": "{color.black}"
+      },
+      "link": {
+        "content": {
+          "$value": "{color.yellow.400}"
+        },
+        "surface": {
+          "$value": "{color.black}"
+        }
+      }
+    }
+  }
+}

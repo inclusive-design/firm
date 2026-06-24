@@ -1,0 +1,4 @@
+footer {
+    background: var(--fi-color-footer-surface);
+    color: var(--fi-color-footer-content);
+}

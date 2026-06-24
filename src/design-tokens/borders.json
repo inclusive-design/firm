@@ -1,0 +1,28 @@
+{
+  "border": {
+    "width": {
+      "hairline": {
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        }
+      },
+      "thin": {
+        "$value": {
+          "value": 2,
+          "unit": "px"
+        }
+      },
+      "thick": {
+        "$value": {
+          "value": 4,
+          "unit": "px"
+        }
+      },
+      "$type": "dimension"
+    },
+    "style": {
+      "$value": "solid"
+    }
+  }
+}
