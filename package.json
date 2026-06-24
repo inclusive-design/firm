@@ -8,7 +8,7 @@
     "packages/components"
   ],
   "scripts": {
-    "build": "npm-run-all clean -s build:*",
+    "build": "npm-run-all clean -s build:eleventy",
     "build:eleventy": "eleventy",
     "build:lib": "npm run build --workspace=packages/components",
     "clean": "rimraf _site",
