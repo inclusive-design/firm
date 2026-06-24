@@ -1,7 +1,6 @@
 {
   "border": {
     "width": {
-      "$type": "dimension",
       "hairline": {
         "$value": {
           "value": 1,
@@ -19,10 +18,10 @@
           "value": 4,
           "unit": "px"
         }
-      }
+      },
+      "$type": "dimension"
     },
     "style": {
-      "$type": "strokeStyle",
       "$value": "solid"
     }
   }

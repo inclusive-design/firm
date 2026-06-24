@@ -1,10 +1,7 @@
 {
   "size": {
     "$type": "dimension",
-    "body": {
-      "$value": "{text.base}"
-    },
-    "step": {
+    "fluid": {
       "$extensions": {
         "sh.sugarcube": {
           "scale": {

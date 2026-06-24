@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "npm-run-all clean -s build:*",
-    "build:docs": "eleventy",
+    "build:eleventy": "eleventy",
     "build:lib": "npm run build --workspace=packages/components",
     "clean": "rimraf _site",
     "debug": "DEBUG=Eleventy* eleventy",
@@ -18,8 +18,8 @@
     "lint:eslint": "eslint",
     "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
     "lint:stylelint": "stylelint \"**/*.css\"",
-    "start": "npm-run-all clean -p watch:docs",
-    "watch:docs": "cross-env NODE_ENV=development eleventy --serve",
+    "start": "npm-run-all clean -p watch:eleventy",
+    "watch:eleventy": "cross-env NODE_ENV=development eleventy --serve",
     "watch:lib": "npm run watch --workspace=packages/components",
     "prepare": "husky",
     "test": "node --test"
@@ -45,7 +45,8 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-navigation": "^1.0.0",
     "@11ty/eleventy-plugin-vite": "^8.0.0",
-    "eleventy-plugin-vento": "^5.0.0"
+    "eleventy-plugin-vento": "^5.0.0",
+    "hex-to-oklch": "^3.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
