@@ -2371,40 +2371,40 @@
       },
       "weight": {
         "normal": {
-          "$type": "string",
-          "$value": "400",
+          "$type": "fontWeight",
+          "$value": 400,
           "$description": "",
           "$extensions": {
             "mode": {}
           }
         },
         "medium": {
-          "$type": "string",
-          "$value": "500",
+          "$type": "fontWeight",
+          "$value": 500,
           "$description": "",
           "$extensions": {
             "mode": {}
           }
         },
         "semibold": {
-          "$type": "string",
-          "$value": "600",
+          "$type": "fontWeight",
+          "$value": 600,
           "$description": "",
           "$extensions": {
             "mode": {}
           }
         },
         "bold": {
-          "$type": "string",
-          "$value": "700",
+          "$type": "fontWeight",
+          "$value": 700,
           "$description": "",
           "$extensions": {
             "mode": {}
           }
         },
         "extrabold": {
-          "$type": "string",
-          "$value": "800",
+          "$type": "fontWeight",
+          "$value": 800,
           "$description": "",
           "$extensions": {
             "mode": {}
@@ -2551,7 +2551,7 @@
     "leading": {
       "relaxed": {
         "$type": "dimension",
-        "$value": "1.6px",
+        "$value": "160px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -2559,7 +2559,7 @@
       },
       "normal": {
         "$type": "dimension",
-        "$value": "1.4px",
+        "$value": "140px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -2567,7 +2567,7 @@
       },
       "tight": {
         "$type": "dimension",
-        "$value": "1.2px",
+        "$value": "120px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -2575,7 +2575,7 @@
       },
       "none": {
         "$type": "dimension",
-        "$value": "1px",
+        "$value": "100px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -3374,7 +3374,7 @@
         "palette",
         "space"
       ],
-      "createdAt": "2026-06-24T18:50:43.957Z"
+      "createdAt": "2026-06-26T12:27:40.237Z"
     }
   }
 }
