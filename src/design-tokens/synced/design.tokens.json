@@ -2551,7 +2551,7 @@
     "leading": {
       "relaxed": {
         "$type": "dimension",
-        "$value": "160px",
+        "$value": "1.6px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -2559,7 +2559,7 @@
       },
       "normal": {
         "$type": "dimension",
-        "$value": "140px",
+        "$value": "1.4px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -2567,7 +2567,7 @@
       },
       "tight": {
         "$type": "dimension",
-        "$value": "120px",
+        "$value": "1.2px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -2575,7 +2575,7 @@
       },
       "none": {
         "$type": "dimension",
-        "$value": "100px",
+        "$value": "1px",
         "$description": "",
         "$extensions": {
           "mode": {}
@@ -3374,7 +3374,7 @@
         "palette",
         "space"
       ],
-      "createdAt": "2026-06-26T12:27:40.237Z"
+      "createdAt": "2026-06-26T12:29:46.083Z"
     }
   }
 }
