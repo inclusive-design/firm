@@ -3,7 +3,6 @@ import { RenderPlugin } from '@11ty/eleventy';
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
 import { VentoPlugin } from 'eleventy-plugin-vento';
 import sugarcube from '@sugarcube-sh/vite';
-import { hexToOklch } from 'hex-to-oklch';
 import synced from './src/design-tokens/synced/design.tokens.json' with { type: 'json' };
 
 /**
@@ -35,39 +34,6 @@ export default function eleventy(eleventyConfig) {
 
 	eleventyConfig.on('eleventy.before', async ({ _directories, _runMode, _outputMode }) => {
 		const { palette, aliases, colors, borders, typography } = synced;
-
-		/**
-		 * Recursively convert hex string colors to DTCG-compliant OKLCH colors.
-		 * @param {object} object - A DTCG object containing hex string colors.
-		 */
-		const processColors = (object) => {
-			for (const value of Object.values(object)) {
-				if (typeof value === 'object') {
-					if (value?.$type === 'color' && typeof value.$value === 'string') {
-						if (value.$value.charAt(0) === '#') {
-							const hex = value.$value;
-							const oklch = hexToOklch(hex);
-							delete value.$type;
-							value.$value = {
-								colorSpace: 'oklch',
-								components: [
-									Number.parseFloat(Number.parseFloat(oklch.l, 10).toFixed(4), 10),
-									Number.parseFloat(Number.parseFloat(oklch.c, 10).toFixed(4), 10),
-									Number.parseFloat(Number.parseFloat(oklch.h, 10).toFixed(4), 10),
-								],
-								alpha:
-									oklch.a
-										? Number.parseFloat(Number.parseFloat(oklch.a, 10).toFixed(2), 10)
-										: 1,
-								hex,
-							};
-						}
-					} else {
-						processColors(value);
-					}
-				}
-			}
-		};
 
 		/**
 		 * Recursively replace theme colors with value from Cobalt's legacy mode format.
@@ -104,18 +70,6 @@ export default function eleventy(eleventyConfig) {
 					} else {
 						removePrefixes(value, prefixes);
 					}
-				}
-			}
-		};
-
-		/**
-		 * Recursively convert numeric font weights stored as strings into integers.
-		 * @param {object} weights - A DTCG object containing font weights stored as strings.
-		 */
-		const processWeights = (weights) => {
-			for (const weight of Object.keys(weights)) {
-				if (weight !== '$type' && typeof weights[weight].$value === 'string') {
-					weights[weight].$value = Number.parseInt(weights[weight].$value, 10);
 				}
 			}
 		};
@@ -168,12 +122,7 @@ export default function eleventy(eleventyConfig) {
 		};
 
 		/**
-		 * 1. Convert colors from hex to OKLCH.
-		 */
-		processColors(palette);
-
-		/**
-		 * 2. Create the generic UIO theme which assigns UIO primitives to all the required colors.
+		 * 1. Create the generic UIO theme which assigns UIO primitives to all the required colors.
 		 */
 		const themes = { uio: structuredClone(colors) };
 
@@ -183,7 +132,7 @@ export default function eleventy(eleventyConfig) {
 		processThemes(themes.uio, 'bw');
 
 		/**
-		 * 3. Create all of the other contrast themes.
+		 * 2. Create all of the other contrast themes.
 		 */
 		for (const theme of ['dark', 'bw', 'wb', 'by', 'yb', 'gd', 'gw', 'lgdg', 'bbr']) {
 			themes[theme] = structuredClone(colors);
@@ -202,7 +151,7 @@ export default function eleventy(eleventyConfig) {
 		}
 
 		/**
-		 * 4. Remove all the unnecessary group prefixes.
+		 * 3. Remove all the unnecessary group prefixes.
 		 */
 		removePrefixes(aliases, ['palette']);
 		removePrefixes(colors, ['palette', 'aliases', 'colors']);
@@ -210,19 +159,22 @@ export default function eleventy(eleventyConfig) {
 		removePrefixes(typography, ['typography', 'responsive']);
 
 		/**
-		 * 5. Clean up values which aren't exported cleanly from Figma: font weight, leading, dimensions.
+		 * 4. Clean up values which aren't exported cleanly from Figma: leading, dimensions.
 		 */
-		processWeights(typography.font.weight);
 
 		processLeadings(typography.leading);
 
 		processDimensions(borders.border.width);
 
 		/**
-		 * 6. Remove extraneous properties.
+		 * 5. Remove extraneous properties.
 		 */
 		for (const object of [palette, aliases, colors, borders, typography]) {
-			removeExtraProperties(object, ['$extensions', '$description', '$type']);
+			removeExtraProperties(object, ['$extensions', '$description']);
+		}
+
+		for (const object of [palette, aliases, colors, borders, typography.leading]) {
+			removeExtraProperties(object, ['$type']);
 		}
 
 		for (const theme of Object.keys(themes)) {
@@ -230,21 +182,26 @@ export default function eleventy(eleventyConfig) {
 		}
 
 		/**
-		 * 7. Standardize types to match DTCG specification.
+		 * 6. Standardize types to match DTCG specification.
 		 */
 		palette.$type = 'color';
 		aliases.$type = 'color';
 		colors.$type = 'color';
 		borders.border.width.$type = 'dimension';
-		typography.font.$type = 'fontFamily';
-		typography.font.weight.$type = 'fontWeight';
+
+		for (const key of Object.keys(typography.font)) {
+			if (key !== 'weight') {
+				typography.font[key].$type = 'fontFamily';
+			}
+		}
+
 		typography.text.$type = 'dimension';
 		typography.heading.$type = 'dimension';
 		typography.body.$type = 'dimension';
 		typography.diagram.$type = 'dimension';
 		typography.leading.$type = 'number';
 
-		/** 8. Write to typography.json and palette.json. */
+		/** 7. Write to individual token files. */
 
 		for (const [key, value] of Object.entries({
 			palette, aliases, colors, borders, typography,

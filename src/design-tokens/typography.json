@@ -1,99 +1,124 @@
 {
   "font": {
     "body": {
+      "$type": "fontFamily",
       "$value": "{font.serif}"
     },
     "display-alt": {
+      "$type": "fontFamily",
       "$value": "{font.serif-alt}"
     },
     "display": {
+      "$type": "fontFamily",
       "$value": "{font.sans}"
     },
     "sans": {
+      "$type": "fontFamily",
       "$value": "Mulish"
     },
     "serif": {
+      "$type": "fontFamily",
       "$value": "Merriweather"
     },
     "serif-alt": {
+      "$type": "fontFamily",
       "$value": "Diphylleia"
     },
     "weight": {
       "normal": {
+        "$type": "fontWeight",
         "$value": 400
       },
       "medium": {
+        "$type": "fontWeight",
         "$value": 500
       },
       "semibold": {
+        "$type": "fontWeight",
         "$value": 600
       },
       "bold": {
+        "$type": "fontWeight",
         "$value": 700
       },
       "extrabold": {
+        "$type": "fontWeight",
         "$value": 800
-      },
-      "$type": "fontWeight"
-    },
-    "$type": "fontFamily"
+      }
+    }
   },
   "text": {
     "sm": {
+      "$type": "dimension",
       "$value": "{size.fluid.-1}"
     },
     "base": {
+      "$type": "dimension",
       "$value": "{size.fluid.0}"
     },
     "lg": {
+      "$type": "dimension",
       "$value": "{size.fluid.1}"
     },
     "xl": {
+      "$type": "dimension",
       "$value": "{size.fluid.2}"
     },
     "2xl": {
+      "$type": "dimension",
       "$value": "{size.fluid.3}"
     },
     "3xl": {
+      "$type": "dimension",
       "$value": "{size.fluid.4}"
     },
     "4xl": {
+      "$type": "dimension",
       "$value": "{size.fluid.5}"
     },
     "$type": "dimension"
   },
   "heading": {
     "1": {
+      "$type": "dimension",
       "$value": "{text.4xl}"
     },
     "2": {
+      "$type": "dimension",
       "$value": "{text.3xl}"
     },
     "3": {
+      "$type": "dimension",
       "$value": "{text.2xl}"
     },
     "4": {
+      "$type": "dimension",
       "$value": "{text.xl}"
     },
     "5": {
+      "$type": "dimension",
       "$value": "{text.lg}"
     },
     "$type": "dimension"
   },
   "body": {
     "small": {
+      "$type": "dimension",
       "$value": "{text.sm}"
     },
     "default": {
+      "$type": "dimension",
       "$value": "{text.base}"
     },
     "$type": "dimension"
   },
   "diagram": {
     "label": {
+      "$type": "dimension",
       "$value": "{text.sm}"
     },
     "default": {
+      "$type": "dimension",
       "$value": "{text.base}"
     },
     "$type": "dimension"

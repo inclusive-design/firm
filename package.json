@@ -13,7 +13,6 @@
     "build:lib": "npm run build --workspace=packages/components",
     "clean": "rimraf _site",
     "debug": "DEBUG=Eleventy* eleventy",
-    "generate:styles": "sugarcube generate --watch",
     "lint": "run-s -l lint:*",
     "lint:eslint": "eslint",
     "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
@@ -45,8 +44,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-navigation": "^1.0.0",
     "@11ty/eleventy-plugin-vite": "^8.0.0",
-    "eleventy-plugin-vento": "^5.0.0",
-    "hex-to-oklch": "^3.2.0"
+    "eleventy-plugin-vento": "^5.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.0",
