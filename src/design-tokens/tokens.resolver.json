@@ -16,6 +16,9 @@
           "$ref": "./colors.json"
         },
         {
+          "$ref": "./cube.json"
+        },
+        {
           "$ref": "./size.json"
         },
         {

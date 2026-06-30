@@ -19,9 +19,9 @@ their grid area. Can be any valid align-items value. */
 .grid-auto {
     display: grid;
     grid-template-columns: repeat(
-            var(--fi-grid-placement, auto-fill),
-            minmax(var(--fi-grid-item-min, 16rem), 1fr)
+            var(--firm-grid-placement, auto-fill),
+            minmax(var(--firm-grid-item-min, 16rem), 1fr)
         );
-    gap: var(--fi-grid-gap, 1rem);
-    align-items: var(--fi-grid-align-items, stretch);
+    gap: var(--firm-grid-gap, 1rem);
+    align-items: var(--firm-grid-align-items, stretch);
 }

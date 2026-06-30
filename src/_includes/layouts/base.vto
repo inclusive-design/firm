@@ -5,35 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }} | FIRM Design System</title>
     <script type="module" src="/assets/scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=diphylleia:400|merriweather:400,400i,600,600i,700,700i|mulish:600,800" rel="stylesheet" />
     <link href="/assets/styles/main.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="wrapper switcher step--1">
-            <div>
-                <a rel="external" href="https://idrc.ocadu.ca/">
-                    An Inclusive Design Research Centre Project
-                </a>
+        <div class="[ global ]">
+            <div class="[ wrapper ] [ switcher ] [ step--1 ]">
+                <div>
+                    <a rel="external" href="https://idrc.ocadu.ca/">
+                        An Inclusive Design Research Centre Project
+                    </a>
+                </div>
+                <ul role="list" class="[ flex ]" data-grow="false" data-separator="/">
+                    <li>
+                        <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page">English</a>
+                    </li>
+                    <li>
+                        <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
+                    </li>
+                </ul>
             </div>
-            <ul role="list" data-grow="false">
-                <li>
-                    <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page">English</a>
-                </li>
-                <li>
-                    <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
-                </li>
-            </ul>
         </div>
     </header>
-    <main>
-        <div class="wrapper flow">
-        <h1>{{ title }}</h1>
-        {{ content }}
+    <main class="[ flow ] [ prose ]">
+        <div class="[ flow ] [ hero ] [ region ]">
+            <div class="[ wrapper ]">
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+        <div class="[ flow ] [ region ] [ wrapper ]">
+            {{ content }}
         </div>
     </main>
-    <footer class="region">
-        <div class="wrapper">
-        <p>Here is the footer.</p>
+    <footer class="[ region ]">
+        <div class="[ columns ] [ wrapper ]">
         </div>
     </footer>
 </body>

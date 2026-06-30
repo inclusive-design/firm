@@ -30,7 +30,7 @@ export default defineConfig({
 	utilities: {
 		classes: {
 			'font-size': {
-				source: 'size.*',
+				source: 'size.fluid.*',
 				prefix: 'step',
 			},
 		},

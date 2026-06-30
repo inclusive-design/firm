@@ -6,6 +6,6 @@ CUSTOM PROPERTIES AND CONFIGURATION
 --region-space: The vertical padding of the region
 */
 .region {
-    padding-block: var(--fi-region-space, 1rem);
+    padding-block: var(--firm-region-space, 1rem);
     position: relative;
 }

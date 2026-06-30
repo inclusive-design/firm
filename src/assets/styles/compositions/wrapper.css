@@ -9,8 +9,9 @@ CUSTOM PROPERTIES AND CONFIGURATION
 */
 .wrapper {
     margin-inline: auto;
-    max-width: var(--fi-wrapper-max-width, 1360px);
-    padding-left: var(--fi-wrapper-padding-inline, 1rem);
-    padding-right: var(--fi-wrapper-padding-inline, 1rem);
+    max-width: var(--firm-wrapper-max-width, 90rem);
+    padding-left: var(--firm-wrapper-padding-inline, 1rem);
+    padding-right: var(--firm-wrapper-padding-inline, 1rem);
     position: relative;
+    width: 100%;
 }

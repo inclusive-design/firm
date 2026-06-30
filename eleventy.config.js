@@ -10,8 +10,8 @@ import synced from './src/design-tokens/synced/design.tokens.json' with { type: 
  * @returns {object} The configuration object.
  */
 export default function eleventy(eleventyConfig) {
-	eleventyConfig.ignores.add('src/design-tokens/*.json');
-	eleventyConfig.ignores.add('src/design-tokens/themes/*.json');
+	eleventyConfig.watchIgnores.add('src/design-tokens/*.json');
+	eleventyConfig.watchIgnores.add('src/design-tokens/themes/*.json');
 
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {

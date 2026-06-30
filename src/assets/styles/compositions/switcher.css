@@ -18,13 +18,13 @@ Can be any acceptable flexbox alignment value.
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: var(--fi-switcher-gap, 1rem);
-    align-items: var(--fi-switcher-vertical-alignment, flex-start);
+    gap: var(--firm-switcher-gap, 1rem);
+    align-items: var(--firm-switcher-vertical-alignment, center);
 }
 
 .switcher > * {
     flex-grow: 1;
-    flex-basis: calc((var(--fi-switcher-inline-at, 60rem) - 100%) * 999);
+    flex-basis: calc((var(--firm-switcher-inline-at, 48rem) - 100%) * 999);
 }
 
 

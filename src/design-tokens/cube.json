@@ -7,6 +7,10 @@
     "$value": "{space.fluid.md}",
     "$description": "Default gap for grid composition"
   },
+  "grid-item-min": {
+    "$value": "{space.fluid.5xl}",
+    "$description": "Minimum size for grid composition"
+  },
   "repel-gap": {
     "$value": "{space.fluid.md}",
     "$description": "Default gap for repel composition"
@@ -15,16 +19,16 @@
     "$value": "{space.fluid.md}",
     "$description": "Default gap for sidebar composition"
   },
-  "switcher-gap": {
-    "$value": "{space.fluid.md}",
-    "$description": "Default gap for switcher composition"
-  },
   "region-space": {
-    "$value": "{space.fluid.xl}",
+    "$value": "{space.fluid.lg}",
     "$description": "Base vertical padding for page sections"
   },
   "wrapper-max-width": {
-    "$value": "{container.8xl}",
+    "$type": "dimension",
+    "$value": {
+      "value": 90,
+      "unit": "rem"
+    },
     "$description": "Max width for wrapper composition"
   },
   "wrapper-padding-inline": {

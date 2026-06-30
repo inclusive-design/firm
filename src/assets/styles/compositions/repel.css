@@ -15,8 +15,8 @@ Can be any acceptable flexbox alignment value.
 */
 .repel {
     display: flex;
-    flex-flow: var(--fi-repel-direction, row) wrap;
+    flex-flow: var(--firm-repel-direction, row) wrap;
     justify-content: space-between;
-    align-items: var(--fi-repel-vertical-alignment, center);
-    gap: var(--fi-repel-gap, 1rem);
+    align-items: var(--firm-repel-vertical-alignment, center);
+    gap: var(--firm-repel-gap, 1rem);
 }
