@@ -1,6 +1,6 @@
 {
   "cluster-gap": {
-    "$value": "{space.fluid.sm}",
+    "$value": "{space.fluid.md}",
     "$description": "Base gap spacing for cluster composition"
   },
   "grid-gap": {
@@ -18,6 +18,10 @@
   "sidebar-gap": {
     "$value": "{space.fluid.md}",
     "$description": "Default gap for sidebar composition"
+  },
+  "switcher-gap": {
+    "$value": "{space.fluid.md}",
+    "$description": "Default gap for switcher composition"
   },
   "region-space": {
     "$value": "{space.fluid.lg}",

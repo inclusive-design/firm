@@ -3,3 +3,26 @@ footer {
     color: var(--firm-color-footer-content);
     margin-block-start: auto;
 }
+
+footer a {
+    --_surface-color: transparent;
+    --_content-color: currentColor;
+}
+
+footer .switcher {
+    --firm-switcher-vertical-alignment: flex-start;
+}
+
+footer .switcher > * {
+    border-block-start: solid var(--firm-border-width-thin) currentColor;
+    padding-block-start: var(--firm-space-fluid-sm);
+    text-wrap: balance;
+}
+
+footer .switcher > :nth-child(1) {
+  flex-grow: 2;
+}
+
+footer .grid-auto {
+    --firm-grid-align-items: center;
+}

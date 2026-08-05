@@ -56,13 +56,18 @@ body {
 /* ============================================
    Typography
    ============================================ */
-
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
-h6 {
+.h5,
+h6,
+.h6 {
     font-family: var(--firm-font-display, inherit);
     font-weight: var(--firm-font-weight-extrabold, 800);
     line-height: var(--firm-leading-heading, var(--firm-leading-tight, 1.2));
@@ -70,27 +75,27 @@ h6 {
     text-wrap: balance;
 }
 
-h1 {
+h1, .h1 {
     font-size: var(--firm-heading-1, var(--firm-text-3xl, 2.25rem));
 }
 
-h2 {
+h2, .h2 {
     font-size: var(--firm-heading-2, var(--firm-text-2xl, 1.875rem));
 }
 
-h3 {
+h3, .h3 {
     font-size: var(--firm-heading-3, var(--firm-text-xl, 1.5rem));
 }
 
-h4 {
+h4, .h4 {
     font-size: var(--firm-heading-4, var(--firm-text-lg, 1.25rem));
 }
 
-h5 {
+h5, .h5 {
     font-size: var(--firm-text-base, 1rem);
 }
 
-h6 {
+h6, .h6 {
     font-size: var(--firm-text-base, 1rem);
 }
 

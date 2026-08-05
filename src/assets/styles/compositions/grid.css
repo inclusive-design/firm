@@ -20,7 +20,7 @@ their grid area. Can be any valid align-items value. */
     display: grid;
     grid-template-columns: repeat(
             var(--firm-grid-placement, auto-fill),
-            minmax(var(--firm-grid-item-min, 16rem), 1fr)
+            minmax(var(--firm-grid-item-min, 10rem), 1fr)
         );
     gap: var(--firm-grid-gap, 1rem);
     align-items: var(--firm-grid-align-items, stretch);

@@ -22,7 +22,8 @@
       "$type": "dimension"
     },
     "style": {
-      "$value": "solid"
+      "$value": "solid",
+      "$type": "strokeStyle"
     }
   }
 }
