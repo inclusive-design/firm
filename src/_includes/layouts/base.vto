@@ -5,35 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ title }} | FIRM Design System</title>
     <script type="module" src="/assets/scripts/main.js"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=diphylleia:400|merriweather:400,400i,600,600i,700,700i|mulish:600,800" rel="stylesheet" />
     <link href="/assets/styles/main.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <div class="wrapper switcher step--1">
-            <div>
-                <a rel="external" href="https://idrc.ocadu.ca/">
-                    An Inclusive Design Research Centre Project
-                </a>
+        <div class="[ global ]">
+            <div class="[ wrapper ] [ switcher ] [ step--1 ]">
+                <div>
+                    <a rel="external" href="https://idrc.ocadu.ca/">
+                        An Inclusive Design Research Centre Project
+                    </a>
+                </div>
+                <ul role="list" class="[ flex ]" data-grow="false" data-separator="/">
+                    <li>
+                        <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page">English</a>
+                    </li>
+                    <li>
+                        <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
+                    </li>
+                </ul>
             </div>
-            <ul role="list" data-grow="false">
-                <li>
-                    <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page">English</a>
-                </li>
-                <li>
-                    <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
-                </li>
-            </ul>
         </div>
     </header>
-    <main>
-        <div class="wrapper flow">
-        <h1>{{ title }}</h1>
-        {{ content }}
+    <main class="[ flow ] [ prose ]">
+        <div class="[ flow ] [ hero ] [ region ]">
+            <div class="[ wrapper ]">
+                <h1>{{ title }}</h1>
+            </div>
+        </div>
+        <div class="[ flow ] [ region ] [ wrapper ]">
+            {{ content }}
         </div>
     </main>
-    <footer class="region">
-        <div class="wrapper">
-        <p>Here is the footer.</p>
+    <footer class="[ region ] [ step--1 ]">
+        <div class="[ switcher ] [ wrapper ]">
+            <div class="[ flow ]">
+                <h2 class="[ h4 ]" >Contact Us</h2>
+                <h3 class="[ h5 ]">Email</h3>
+                <p>
+                    <a href="mailto:idrc@ocadu.ca">idrc@ocadu.ca</a>
+                </p>
+                <h3 class="[ h5 ]">Phone</h3>
+                <p>
+                    <a href="tel:(416) 977-6000 x3967">(416) 977-6000 x3967</a>
+                </p>
+                <h3 class="[ h5 ]">Address</h3>
+                <address>
+                    <p>Inclusive Design Research Centre<br>
+                        205 Richmond Street West, 2nd Floor<br />
+                        Toronto, ON M5V 1V3</p>
+                </address>
+            </div>
+            <div class="[ flow ]">
+                <div class="[ grid-auto ]">
+                    <a href="https://idrc.ocadu.ca/" rel="external">{{ include 'svg/idrc.svg' }}</a>
+                    <a href="https://ocadu.ca/" rel="external">{{ include 'svg/ocadu.svg' }}</a>
+                </div>
+            </div>
+            <div>
+                <p>Funded in part by the Government of Canada's Social Development Partnerships Program.</p>
+            </div>
+            <div>
+                <p>Published under a CC-BY-NC 4.0 License</p>
+            </div>
         </div>
     </footer>
 </body>
