@@ -1,6 +1,6 @@
 {
   "name": "@inclusive-design/firm",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Design system for the FIRM project.",
   "main": "eleventy.config.js",
   "type": "module",
