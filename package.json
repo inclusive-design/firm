@@ -4,22 +4,17 @@
   "description": "Design system for the FIRM project.",
   "main": "eleventy.config.js",
   "type": "module",
-  "workspaces": [
-    "packages/components"
-  ],
   "scripts": {
     "build": "npm-run-all clean -s build:eleventy",
     "build:eleventy": "eleventy",
-    "build:lib": "npm run build --workspace=packages/components",
     "clean": "rimraf _site",
     "debug": "DEBUG=Eleventy* eleventy",
     "lint": "run-s -l lint:*",
     "lint:eslint": "eslint",
     "lint:markdownlint": "markdownlint-cli2 \"**/*.md\"",
     "lint:stylelint": "stylelint \"**/*.css\"",
-    "start": "npm-run-all clean -p watch:eleventy",
-    "watch:eleventy": "cross-env NODE_ENV=development eleventy --serve",
-    "watch:lib": "npm run watch --workspace=packages/components",
+    "start": "npm-run-all clean -p watch",
+    "watch": "cross-env NODE_ENV=development eleventy --serve",
     "prepare": "husky",
     "test": "node --test"
   },
@@ -30,7 +25,6 @@
   "keywords": [
     "design-system",
     "design-tokens",
-    "elena",
     "eleventy",
     "sugarcube"
   ],
