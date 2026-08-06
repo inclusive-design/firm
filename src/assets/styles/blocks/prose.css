@@ -123,7 +123,7 @@ CUSTOM PROPERTIES AND CONFIGURATION
 }
 
 .prose :is(ol, ul):not(.not-prose) {
-    padding-inline-start: var(--firm-space-md, 1.5rem);
+    padding-inline-start: 0;
 }
 
 .prose :is(ol, ul):not(.not-prose) li {
