@@ -80,30 +80,6 @@ export default function eleventy(eleventyConfig) {
 			};
 
 			/**
-			 * Recursively convert text leadings stored as strings into floats, removing unnecessary `px` suffixes.
-			 * @param {object} leadings - A DTCG object containing text leadings stored as strings.
-			 */
-			const processLeadings = (leadings) => {
-				for (const leading of Object.keys(leadings)) {
-					if (typeof leadings[leading].$value === 'string') {
-						leadings[leading].$value = Number.parseFloat(leadings[leading].$value.replace('px', ''));
-					}
-				}
-			};
-
-			/**
-			 * Recursively convert dimensions with a unit stored as a string into a DTCG-compliant value object.
-			 * @param {object} dimensions - A DTCG object containing dimensions stored as strings.
-			 */
-			const processDimensions = (dimensions) => {
-				for (const dimension of Object.keys(dimensions)) {
-					if (typeof dimensions[dimension].$value === 'string') {
-						dimensions[dimension].$value = { value: Number.parseInt(dimensions[dimension].$value.replace('px', ''), 10), unit: 'px' };
-					}
-				}
-			};
-
-			/**
 			 * Remove extra properties from design tokens.
 			 * @param {object} object - A DTCG object containing extraneous properties.
 			 * @param {Array} properties - The properties to remove.
@@ -164,21 +140,13 @@ export default function eleventy(eleventyConfig) {
 			removePrefixes(typography, ['typography', 'responsive']);
 
 			/**
-			 * 4. Clean up values which aren't exported cleanly from Figma: leading, dimensions.
-			 */
-
-			processLeadings(typography.leading);
-
-			processDimensions(borders.border.width);
-
-			/**
-			 * 5. Remove extraneous properties.
+			 * 4. Remove extraneous properties.
 			 */
 			for (const object of [palette, aliases, colors, borders, typography]) {
 				removeExtraProperties(object, ['$extensions', '$description']);
 			}
 
-			for (const object of [palette, aliases, colors, borders, typography.leading]) {
+			for (const object of [palette, aliases, colors, borders]) {
 				removeExtraProperties(object, ['$type']);
 			}
 
@@ -187,7 +155,7 @@ export default function eleventy(eleventyConfig) {
 			}
 
 			/**
-			 * 6. Standardize types to match DTCG specification.
+			 * 5. Standardize types to match DTCG specification.
 			 */
 			palette.$type = 'color';
 			aliases.$type = 'color';
@@ -205,9 +173,8 @@ export default function eleventy(eleventyConfig) {
 			typography.heading.$type = 'dimension';
 			typography.body.$type = 'dimension';
 			typography.diagram.$type = 'dimension';
-			typography.leading.$type = 'number';
 
-			/** 7. Write to individual token files. */
+			/** 6. Write to individual token files. */
 
 			for (const [key, value] of Object.entries({
 				palette, aliases, colors, borders, typography,

@@ -79,7 +79,7 @@ CUSTOM PROPERTIES AND CONFIGURATION
 
 /* Bump up the line height for paragraphs */
 .prose :is(p) {
-    line-height: 2;
+    line-height: var(--firm-leading-relaxed, 1.6);
 }
 
 /* Bump down the font weight for headings, dt, and strong */

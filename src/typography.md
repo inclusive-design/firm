@@ -5,7 +5,7 @@ permalink: /
 ---
 ## Heading 2
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum congue interdum. Phasellus eu odio eget nibh venenatis commodo. Nulla id arcu tincidunt felis lacinia condimentum tincidunt ac nulla. Pellentesque sagittis est non sapien consectetur, eget volutpat magna tincidunt. Integer aliquet nunc id sapien tincidunt, eu efficitur orci laoreet. In maximus ullamcorper orci vitae blandit.
+The Inclusive Design Research Centre ran a project called <a href="#">Partnerships for Financial Inclusion</a>, focused on understanding the barriers and approaches that diverse people with disabilities had in accessing financial systems.
 
 Phasellus porttitor, nunc vel mattis iaculis, lectus ex hendrerit mauris, eu tempor turpis metus et neque. Donec tincidunt diam tincidunt enim convallis, sed semper tellus congue. Mauris rutrum efficitur luctus. Nam vel ipsum ipsum. Duis accumsan mauris mi, blandit scelerisque tortor sodales in. Mauris finibus tortor libero, ut viverra neque accumsan nec. Aenean ut velit ex. Phasellus placerat luctus est ac varius. Etiam vulputate vitae dui sed varius. Pellentesque eleifend quam sit amet quam faucibus pellentesque ac a velit.
 

@@ -5,8 +5,8 @@ footer {
 }
 
 footer a {
-    --_surface-color: transparent;
-    --_content-color: currentColor;
+    --_surface-color: var(--firm-color-action-inverse-surface-default);
+    --_content-color: var(--firm-color-action-inverse-content-default);
 }
 
 footer .switcher {

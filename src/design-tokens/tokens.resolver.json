@@ -22,6 +22,9 @@
           "$ref": "./cube.json"
         },
         {
+          "$ref": "./shadows.json"
+        },
+        {
           "$ref": "./size.json"
         },
         {

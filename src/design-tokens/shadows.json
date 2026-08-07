@@ -2,6 +2,29 @@
   "shadow": {
     "$type": "shadow",
     "link": {
+      "default": [
+        {
+          "$value": {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 3,
+              "unit": "px"
+            },
+            "color": "{color.action.surface.default}"
+          }
+        }
+      ],
       "hover": {
         "$value": {
           "offsetX": {
@@ -42,6 +65,73 @@
             "unit": "px"
           },
           "color": "{color.action.border.focus}"
+        }
+      },
+      "dark": {
+        "default": [
+          {
+            "$value": {
+              "offsetX": {
+                "value": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "value": 0,
+                "unit": "px"
+              },
+              "blur": {
+                "value": 0,
+                "unit": "px"
+              },
+              "spread": {
+                "value": 3,
+                "unit": "px"
+              },
+              "color": "{color.nav.global.surface}"
+            }
+          }
+        ],
+        "hover": {
+          "$value": {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 1.5,
+              "unit": "px"
+            },
+            "color": "{color.nav.global.content}"
+          }
+        },
+        "focus": {
+          "$value": {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 1.5,
+              "unit": "px"
+            },
+            "color": "{color.nav.global.content}"
+          }
         }
       }
     },

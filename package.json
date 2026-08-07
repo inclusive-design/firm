@@ -7,6 +7,7 @@
   "scripts": {
     "build": "npm-run-all clean -s build:eleventy",
     "build:eleventy": "eleventy",
+    "build:sugarcube": "sugarcube generate",
     "clean": "rimraf _site",
     "debug": "DEBUG=Eleventy* eleventy",
     "lint": "run-s -l lint:*",
@@ -46,8 +47,8 @@
     "@inclusive-design/eslint-config": "^0.5.0",
     "@inclusive-design/markdownlint-config": "^0.1.0",
     "@inclusive-design/stylelint-config": "^0.1.0",
-    "@sugarcube-sh/cli": "^0.1.14",
-    "@sugarcube-sh/vite": "^0.1.15",
+    "@sugarcube-sh/cli": "^0.1.23",
+    "@sugarcube-sh/vite": "^0.1.23",
     "cross-env": "^10.0.0",
     "eslint": "^10.0.0",
     "husky": "^9.0.0",

@@ -179,11 +179,11 @@ a {
     --_content-color: var(--firm-color-action-content-default, revert);
 
     background-color: var(--_surface-color);
+    box-shadow: var(--firm-shadow-link-default);
     color: var(--_content-color);
     text-decoration: var(--firm-link-decoration-default, underline);
     -webkit-text-decoration: var(--firm-link-decoration-default, underline);
     text-decoration-skip-ink: auto;
-    text-underline-offset: 0.25em;
 
     &:visited {
         color: currentColor;
