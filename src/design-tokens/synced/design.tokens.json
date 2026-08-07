@@ -1587,12 +1587,12 @@
           "surface": {
             "default": {
               "$type": "color",
-              "$value": "{aliases.color.neutral.700}",
+              "$value": "{palette.color.alpha.transparent}",
               "$description": "",
               "$extensions": {
                 "mode": {
-                  "default": "{aliases.color.neutral.700}",
-                  "dark": "{aliases.color.neutral.700}",
+                  "default": "{palette.color.alpha.transparent}",
+                  "dark": "{palette.color.alpha.transparent}",
                   "bw": "{colors.color.uio.link.surface}",
                   "wb": "{colors.color.uio.link.surface}",
                   "by": "{colors.color.uio.link.surface}",
@@ -1606,12 +1606,12 @@
             },
             "hover": {
               "$type": "color",
-              "$value": "{aliases.color.neutral.700}",
+              "$value": "{palette.color.alpha.transparent}",
               "$description": "",
               "$extensions": {
                 "mode": {
-                  "default": "{aliases.color.neutral.700}",
-                  "dark": "{aliases.color.neutral.700}",
+                  "default": "{palette.color.alpha.transparent}",
+                  "dark": "{palette.color.alpha.transparent}",
                   "bw": "{colors.color.uio.link.surface}",
                   "wb": "{colors.color.uio.link.surface}",
                   "by": "{colors.color.uio.link.surface}",
@@ -4301,7 +4301,7 @@
         "palette",
         "space"
       ],
-      "createdAt": "2026-08-07T16:11:01.212Z"
+      "createdAt": "2026-08-07T17:07:54.539Z"
     }
   }
 }
