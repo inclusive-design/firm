@@ -92,7 +92,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    font-size: var(--firm-text-base, 1rem);
+    font-size: var(--firm-heading-5, 1rem);
 }
 
 h6, .h6 {
