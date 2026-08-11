@@ -11,7 +11,7 @@ CUSTOM PROPERTIES AND CONFIGURATION
 
 /* Default flow space. Change this one value to change the overall flow */
 .prose {
-    --flow-space: var(--firm-space-lg, 1em);
+    --firm-flow-space: var(--firm-space-lg, 1em);
 }
 
 /* Increase legibility by limiting line lengths */
@@ -32,18 +32,18 @@ CUSTOM PROPERTIES AND CONFIGURATION
 
 /* Heading flow for elements that follow them */
 .prose :is(h1, h2, h3, h4):not(.not-prose) + *:not(.not-prose) {
-    --flow-space: var(--firm-space-md, 1.5rem);
+    --firm-flow-space: var(--firm-space-md, 1.5rem);
 }
 
 /* Add more space on and around figures and tables */
 .prose :is(figure, table):not(.not-prose),
 .prose :is(figure, table):not(.not-prose) + *:not(.not-prose) {
-    --flow-space: var(--firm-space-2xl, 3rem);
+    --firm-flow-space: var(--firm-space-2xl, 3rem);
 }
 
 /* Add more space to headings on block start */
 .prose *:not(.not-prose) + :is(h1, h2, h3, h4):not(.not-prose) {
-    --flow-space: var(--firm-space-xl, 2.5rem);
+    --firm-flow-space: var(--firm-space-xl, 2.5rem);
 }
 
 /* Flow for list items */
@@ -74,7 +74,7 @@ CUSTOM PROPERTIES AND CONFIGURATION
 
 /* Add lots of space for horizontal rules */
 .prose :is(hr) {
-    --flow-space: var(--firm-space-2xl, 3rem);
+    --firm-flow-space: var(--firm-space-2xl, 3rem);
 }
 
 /* Bump up the line height for paragraphs */
@@ -123,7 +123,7 @@ CUSTOM PROPERTIES AND CONFIGURATION
 }
 
 .prose :is(ol, ul):not(.not-prose) {
-    padding-inline-start: var(--firm-space-md, 1.5rem);
+    padding-inline-start: 0;
 }
 
 .prose :is(ol, ul):not(.not-prose) li {
