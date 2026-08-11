@@ -92,7 +92,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    font-size: var(--firm-text-base, 1rem);
+    font-size: var(--firm-heading-5, 1rem);
 }
 
 h6, .h6 {
@@ -575,8 +575,8 @@ figure {
 
 figcaption {
     padding-block-start: 0.5em;
-    font-size: var(--firm-caption, var(--firm-text-xs, 0.75rem));
-    font-family: var(--firm-font-mono, monospace);
+    font-size: var(--firm-caption, var(--firm-text-sm, 0.75rem));
+    font-family: var(--firm-font-sans, sans-serif);
 }
 
 video,
@@ -655,6 +655,8 @@ tr + tr :is(th, td) {
 
 caption {
     caption-side: bottom;
+    font-size: var(--firm-caption, var(--firm-text-sm, 0.75rem));
+    font-family: var(--firm-font-sans, sans-serif);
     margin-block-start: var(--firm-space-sm, 1rem);
 }
 
