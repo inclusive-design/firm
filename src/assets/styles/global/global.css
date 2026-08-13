@@ -201,6 +201,11 @@ a {
             color: var(--firm-color-action-content-focus);
         }
     }
+
+    .icon {
+        height: revert;
+        width: revert;
+    }
 }
 
 :not(li, span, div) > a {
@@ -292,6 +297,15 @@ a {
 a code {
     background-color: inherit;
     color: inherit;
+}
+
+nav > a {
+    padding-inline: 0.75em;
+    text-decoration: none;
+}
+
+nav.pagination {
+    padding-inline: 0.25rem;
 }
 
 /* ============================================
