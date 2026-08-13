@@ -178,6 +178,35 @@ a {
     --_surface-color: var(--firm-color-action-surface-default, revert);
     --_content-color: var(--firm-color-action-content-default, revert);
 
+    background-color: transparent;
+    box-shadow: none;
+
+    &:visited {
+        color: var(--_content-color);
+    }
+
+    &:hover {
+        background-color: var(--_surface-color);
+        box-shadow: var(--firm-shadow-link-hover);
+    }
+
+    &:focus,
+    &:active {
+        background-color: var(--firm-color-action-surface-focus);
+        box-shadow: var(--firm-shadow-link-focus);
+        color: var(--firm-color-action-content-focus);
+        outline: 1px solid transparent;
+
+        &:visited {
+            color: var(--firm-color-action-content-focus);
+        }
+    }
+}
+
+:not(li, span, div) > a {
+    --_surface-color: var(--firm-color-action-surface-default, revert);
+    --_content-color: var(--firm-color-action-content-default, revert);
+
     background-color: var(--_surface-color);
     box-shadow: var(--firm-shadow-link-default);
     color: var(--_content-color);
@@ -190,18 +219,72 @@ a {
     }
 
     &:hover {
-        box-shadow: var(--firm-shadow-link-hover) inset;
+        box-shadow: var(--firm-shadow-link-hover);
     }
 
     &:focus,
     &:active {
         background-color: var(--firm-color-action-surface-focus);
-        box-shadow: var(--firm-shadow-link-focus) inset;
+        box-shadow: var(--firm-shadow-link-focus);
         color: var(--firm-color-action-content-focus);
         outline: 1px solid transparent;
 
         &:visited {
             color: var(--firm-color-action-content-focus);
+        }
+    }
+}
+
+.inverse {
+    --_surface-color: var(--firm-color-neutral-800);
+
+    color: white;
+    background-color: var(--_surface-color);
+
+
+    a {
+        --_surface-color: var(--firm-color-action-inverse-surface-default, revert);
+        --_content-color: var(--firm-color-action-inverse-content-default, revert);
+
+        color: var(--_content-color);
+
+        &:hover {
+            box-shadow: var(--firm-shadow-link-inverse-hover);
+        }
+
+        &:focus,
+        &:active {
+            background-color: var(--firm-color-action-inverse-surface-focus);
+            box-shadow: var(--firm-shadow-link-inverse-focus);
+            color: var(--firm-color-action-inverse-content-focus);
+        }
+    }
+
+    :not(li, span, div) > a {
+        --_surface-color: var(--firm-color-action-inverse-surface-default, revert);
+        --_content-color: var(--firm-color-action-inverse-content-default, revert);
+
+        background-color: var(--_surface-color);
+        box-shadow: var(--firm-shadow-link-inverse-default);
+        color: var(--_content-color);
+
+        &:visited {
+            color: var(--_content-color);
+        }
+
+        &:hover {
+            box-shadow: var(--firm-shadow-link-inverse-hover);
+        }
+
+        &:focus,
+        &:active {
+            background-color: var(--firm-color-action-inverse-surface-focus);
+            box-shadow: var(--firm-shadow-link-inverse-focus);
+            color: var(--firm-color-action-inverse-content-focus);
+
+            &:visited {
+                color: var(--firm-color-action-inverse-content-focus);
+            }
         }
     }
 }
@@ -250,7 +333,7 @@ dt {
     margin-inline-start: 0;
 }
 
-ul[data-separator] li + li {
+ul[data-separator] li {
     display: flex;
     gap: 1ch;
 }

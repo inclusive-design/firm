@@ -180,13 +180,13 @@
           }
         },
         "border": {
-          "hover": {
+          "default": {
             "$value": "{color.uio.link.content}"
           },
           "focus": {
             "$value": "{color.uio.link.surface}"
           },
-          "default": {
+          "hover": {
             "$value": "{color.uio.link.content}"
           }
         },
