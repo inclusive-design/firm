@@ -16,7 +16,7 @@
       "$value": "{color.action.border.default}"
     },
     "radius": {
-      "$value": "{radius.lg}"
+      "$value": "{radius.3xl}"
     },
     "line-height": {
       "$value": "{leading.normal}"

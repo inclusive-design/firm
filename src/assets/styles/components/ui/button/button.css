@@ -1,7 +1,6 @@
 .button {
-    --_padding-block: 0.65em;
-    --_padding-inline: 0.75em;
-    --_form-control-height: round(calc(2 * var(--_padding-block) + 1em * 1.25), 1px);
+    --_padding-inline: 0.75rem;
+    --_form-control-height: 2.5rem;
 
     display: inline-flex;
     align-items: center;
@@ -9,43 +8,64 @@
     text-decoration: none;
     cursor: pointer;
     white-space: nowrap;
-    font: inherit;
+    font-family: var(--firm-font-display);
     font-size: var(--firm-form-control-font-size, var(--firm-text-base));
-    border-color: transparent;
-    padding-block: 0;
-    background-color: var(--firm-color-fill-loud, var(--firm-color-neutral-fill-loud));
+    font-weight: var(--firm-font-weight-semibold);
+    background-color: var(--firm-color-action-surface-default);
+    border: var(--firm-form-control-border-width) var(--firm-border-style) var(--firm-color-action-border-default);
     border-radius: var(--firm-form-control-radius);
-    border-style: var(--firm-border-style);
-    border-width: var(--firm-form-control-border-width);
-    box-shadow: var(--firm-shadow-xs);
-    color: var(--firm-color-on-loud, var(--firm-color-neutral-on-normal));
-    font-weight: var(--firm-font-weight-medium);
-    gap: var(--firm-space-2xs);
+    color: var(--firm-color-action-content-default);
+    gap: 0.75ch;
     min-height: var(--_form-control-height);
     padding-inline: var(--_padding-inline);
     transition-property: color, background-color, border-color;
     transition-timing-function: var(--firm-ease-out);
     transition-duration: var(--firm-transition-normal);
+
+    .icon {
+        height: revert;
+        width: revert;
+    }
 }
 
 .button:hover {
-    background-color: color-mix(
-        in oklab,
-        var(--firm-color-fill-loud, var(--firm-color-neutral-fill-loud)),
-        var(--firm-color-mix-hover, black 5%)
-    );
+    background-color: var(--firm-color-action-surface-hover);
+    border-color: var(--firm-color-action-border-hover);
+    color: var(--firm-color-action-content-hover);
 }
 
+.button:focus,
 .button:active {
-    background-color: color-mix(
-        in oklab,
-        var(--firm-color-fill-loud, var(--firm-color-neutral-fill-loud)),
-        var(--firm-color-mix-active, black 10%)
-    );
+    background-color: var(--firm-color-action-surface-focus);
+    border-color: transparent;
+    box-shadow:
+        0 0 0 var(--firm-form-control-border-width) var(--firm-color-action-border-focus) inset,
+        0 0 0 calc(2 * var(--firm-form-control-border-width)) var(--firm-color-action-surface-focus) inset;
+    color: var(--firm-color-action-content-focus);
+    outline: 1px solid transparent;
 }
 
-.button:focus-visible {
-    box-shadow: 0 0 0 3px color-mix(in oklab, var(--firm-color-fill-loud) 25%, transparent);
-    outline: none;
-    border-color: var(--firm-color-fill-loud);
+.inverse {
+    .button {
+        background-color: var(--firm-color-action-inverse-surface-default);
+        border-color: var(--firm-color-action-inverse-border-default);
+        color: var(--firm-color-action-inverse-content-default);
+    }
+
+    .button:hover {
+        background-color: var(--firm-color-action-inverse-surface-hover);
+        border-color: var(--firm-color-action-inverse-border-hover);
+        color: var(--firm-color-action-inverse-content-hover);
+    }
+
+    .button:focus-visible,
+    .button:active {
+        background-color: var(--firm-color-action-inverse-surface-focus);
+        border-color: var(--firm-color-action-inverse-border-focus);
+        box-shadow:
+            0 0 0 var(--firm-form-control-border-width) var(--firm-color-action-inverse-border-focus) inset,
+            0 0 0 calc(2 * var(--firm-form-control-border-width)) var(--firm-color-action-inverse-surface-focus) inset;
+        color: var(--firm-color-action-inverse-content-focus);
+    }
+
 }

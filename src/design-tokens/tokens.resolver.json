@@ -16,10 +16,19 @@
           "$ref": "./colors.json"
         },
         {
+          "$ref": "./corners.json"
+        },
+        {
           "$ref": "./borders.json"
         },
         {
+          "$ref": "./form-controls.json"
+        },
+        {
           "$ref": "./cube.json"
+        },
+        {
+          "$ref": "./leading.json"
         },
         {
           "$ref": "./shadows.json"
