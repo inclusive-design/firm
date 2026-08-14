@@ -92,21 +92,21 @@
           }
         },
         "content": {
-          "focus": {
-            "$value": "{color.neutral.800}"
-          },
           "default": {
             "$value": "{color.primary.400}"
+          },
+          "focus": {
+            "$value": "{color.neutral.800}"
           }
         },
         "border": {
           "default": {
             "$value": "{color.primary.600}"
           },
-          "focus": {
+          "hover": {
             "$value": "{color.neutral.800}"
           },
-          "hover": {
+          "focus": {
             "$value": "{color.neutral.800}"
           }
         },
@@ -149,46 +149,81 @@
         "default": {
           "$value": "{color.primary.400}"
         },
-        "focus": {
-          "$value": "{color.neutral.800}"
-        },
         "hover": {
           "$value": "{color.primary.400}"
+        },
+        "focus": {
+          "$value": "{color.neutral.800}"
         }
       },
       "surface": {
         "default": {
           "$value": "{color.neutral.700}"
         },
-        "focus": {
-          "$value": "{color.primary.400}"
-        },
         "hover": {
           "$value": "{color.neutral.700}"
+        },
+        "focus": {
+          "$value": "{color.primary.400}"
+        }
+      },
+      "inverse": {
+        "content": {
+          "default": {
+            "$value": "{color.primary.400}"
+          },
+          "hover": {
+            "$value": "{color.primary.400}"
+          },
+          "focus": {
+            "$value": "{color.neutral.800}"
+          }
+        },
+        "border": {
+          "default": {
+            "$value": "{color.alpha.transparent}"
+          },
+          "focus": {
+            "$value": "{color.neutral.800}"
+          },
+          "hover": {
+            "$value": "{color.primary.400}"
+          }
+        },
+        "surface": {
+          "default": {
+            "$value": "{color.neutral.700}"
+          },
+          "hover": {
+            "$value": "{color.neutral.700}"
+          },
+          "focus": {
+            "$value": "{color.primary.400}"
+          }
         }
       },
       "border": {
-        "focus": {
-          "$value": "{color.neutral.800}"
+        "default": {
+          "$value": "{color.neutral.700}"
         },
         "hover": {
           "$value": "{color.primary.400}"
         },
-        "default": {
-          "$value": "{color.neutral.700}"
+        "focus": {
+          "$value": "{color.neutral.800}"
         }
       }
     },
     "diagram": {
       "quadrant": {
         "surface": {
-          "high": {
+          "low": {
             "$value": "{color.neutral.850}"
           },
           "medium": {
             "$value": "{color.neutral.850}"
           },
-          "low": {
+          "high": {
             "$value": "{color.neutral.850}"
           }
         },

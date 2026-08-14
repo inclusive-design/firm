@@ -1,7 +1,12 @@
 {
   "radius": {
     "$type": "dimension",
-    "none": { "$value": { "value": 0, "unit": "rem" } },
+    "none": {
+      "$value": {
+        "value": 0,
+        "unit": "rem"
+      }
+    },
     "sm": {
       "$value": {
         "value": 0.125,
@@ -34,7 +39,7 @@
     },
     "3xl": {
       "$value": {
-        "value": 1.5,
+        "value": 1.25,
         "unit": "rem"
       }
     },
