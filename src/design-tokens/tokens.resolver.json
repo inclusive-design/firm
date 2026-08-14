@@ -28,6 +28,9 @@
           "$ref": "./cube.json"
         },
         {
+          "$ref": "./leading.json"
+        },
+        {
           "$ref": "./shadows.json"
         },
         {
