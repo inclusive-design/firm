@@ -1,12 +1,14 @@
 footer {
-    background: var(--firm-color-footer-surface);
     color: var(--firm-color-footer-content);
     margin-block-start: auto;
 }
 
-footer a {
-    --_surface-color: transparent;
-    --_content-color: currentColor;
+footer.inverse {
+    --_surface-color: var(--firm-color-footer-surface);
+}
+
+footer.inverse a {
+    color: currentColor;
 }
 
 footer .switcher {

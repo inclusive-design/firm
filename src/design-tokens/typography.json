@@ -1,5 +1,27 @@
 {
   "font": {
+    "weight": {
+      "normal": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700
+      },
+      "extrabold": {
+        "$type": "fontWeight",
+        "$value": 800
+      }
+    },
     "body": {
       "$type": "fontFamily",
       "$value": "{font.serif}"
@@ -23,28 +45,6 @@
     "serif-alt": {
       "$type": "fontFamily",
       "$value": "Diphylleia"
-    },
-    "weight": {
-      "normal": {
-        "$type": "fontWeight",
-        "$value": 400
-      },
-      "medium": {
-        "$type": "fontWeight",
-        "$value": 500
-      },
-      "semibold": {
-        "$type": "fontWeight",
-        "$value": 600
-      },
-      "bold": {
-        "$type": "fontWeight",
-        "$value": 700
-      },
-      "extrabold": {
-        "$type": "fontWeight",
-        "$value": 800
-      }
     }
   },
   "text": {
@@ -122,20 +122,5 @@
       "$value": "{text.base}"
     },
     "$type": "dimension"
-  },
-  "leading": {
-    "relaxed": {
-      "$value": 1.6
-    },
-    "normal": {
-      "$value": 1.4
-    },
-    "tight": {
-      "$value": 1.2
-    },
-    "none": {
-      "$value": 1
-    },
-    "$type": "number"
   }
 }

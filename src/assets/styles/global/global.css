@@ -178,25 +178,59 @@ a {
     --_surface-color: var(--firm-color-action-surface-default, revert);
     --_content-color: var(--firm-color-action-content-default, revert);
 
+    background-color: transparent;
+    box-shadow: none;
+
+    &:visited {
+        color: var(--_content-color);
+    }
+
+    &:hover {
+        background-color: var(--_surface-color);
+        box-shadow: var(--firm-shadow-link-hover);
+    }
+
+    &:focus,
+    &:active {
+        background-color: var(--firm-color-action-surface-focus);
+        box-shadow: var(--firm-shadow-link-focus);
+        color: var(--firm-color-action-content-focus);
+        outline: 1px solid transparent;
+
+        &:visited {
+            color: var(--firm-color-action-content-focus);
+        }
+    }
+
+    .icon {
+        height: revert;
+        width: revert;
+    }
+}
+
+:not(li, span, div) > a {
+    --_surface-color: var(--firm-color-action-surface-default, revert);
+    --_content-color: var(--firm-color-action-content-default, revert);
+
     background-color: var(--_surface-color);
+    box-shadow: var(--firm-shadow-link-default);
     color: var(--_content-color);
     text-decoration: var(--firm-link-decoration-default, underline);
     -webkit-text-decoration: var(--firm-link-decoration-default, underline);
     text-decoration-skip-ink: auto;
-    text-underline-offset: 0.25em;
 
     &:visited {
         color: currentColor;
     }
 
     &:hover {
-        box-shadow: var(--firm-shadow-link-hover) inset;
+        box-shadow: var(--firm-shadow-link-hover);
     }
 
     &:focus,
     &:active {
         background-color: var(--firm-color-action-surface-focus);
-        box-shadow: var(--firm-shadow-link-focus) inset;
+        box-shadow: var(--firm-shadow-link-focus);
         color: var(--firm-color-action-content-focus);
         outline: 1px solid transparent;
 
@@ -206,9 +240,72 @@ a {
     }
 }
 
+.inverse {
+    --_surface-color: var(--firm-color-neutral-800);
+
+    color: white;
+    background-color: var(--_surface-color);
+
+
+    a {
+        --_surface-color: var(--firm-color-action-inverse-surface-default, revert);
+        --_content-color: var(--firm-color-action-inverse-content-default, revert);
+
+        color: var(--_content-color);
+
+        &:hover {
+            box-shadow: var(--firm-shadow-link-inverse-hover);
+        }
+
+        &:focus,
+        &:active {
+            background-color: var(--firm-color-action-inverse-surface-focus);
+            box-shadow: var(--firm-shadow-link-inverse-focus);
+            color: var(--firm-color-action-inverse-content-focus);
+        }
+    }
+
+    :not(li, span, div) > a {
+        --_surface-color: var(--firm-color-action-inverse-surface-default, revert);
+        --_content-color: var(--firm-color-action-inverse-content-default, revert);
+
+        background-color: var(--_surface-color);
+        box-shadow: var(--firm-shadow-link-inverse-default);
+        color: var(--_content-color);
+
+        &:visited {
+            color: var(--_content-color);
+        }
+
+        &:hover {
+            box-shadow: var(--firm-shadow-link-inverse-hover);
+        }
+
+        &:focus,
+        &:active {
+            background-color: var(--firm-color-action-inverse-surface-focus);
+            box-shadow: var(--firm-shadow-link-inverse-focus);
+            color: var(--firm-color-action-inverse-content-focus);
+
+            &:visited {
+                color: var(--firm-color-action-inverse-content-focus);
+            }
+        }
+    }
+}
+
 a code {
     background-color: inherit;
     color: inherit;
+}
+
+nav > a {
+    padding-inline: 0.75em;
+    text-decoration: none;
+}
+
+nav.pagination {
+    padding-inline: 0.25rem;
 }
 
 /* ============================================
@@ -250,7 +347,7 @@ dt {
     margin-inline-start: 0;
 }
 
-ul[data-separator] li + li {
+ul[data-separator] li {
     display: flex;
     gap: 1ch;
 }

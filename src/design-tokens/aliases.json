@@ -58,56 +58,6 @@
         "$value": "{color.green.900}"
       }
     },
-    "neutral": {
-      "50": {
-        "$value": "{color.grey.50}"
-      },
-      "75": {
-        "$value": "{color.grey.75}"
-      },
-      "100": {
-        "$value": "{color.grey.100}"
-      },
-      "200": {
-        "$value": "{color.grey.200}"
-      },
-      "250": {
-        "$value": "{color.grey.250}"
-      },
-      "300": {
-        "$value": "{color.grey.300}"
-      },
-      "400": {
-        "$value": "{color.grey.400}"
-      },
-      "450": {
-        "$value": "{color.grey.450}"
-      },
-      "500": {
-        "$value": "{color.grey.500}"
-      },
-      "550": {
-        "$value": "{color.grey.550}"
-      },
-      "600": {
-        "$value": "{color.grey.600}"
-      },
-      "650": {
-        "$value": "{color.grey.650}"
-      },
-      "700": {
-        "$value": "{color.grey.700}"
-      },
-      "750": {
-        "$value": "{color.grey.750}"
-      },
-      "800": {
-        "$value": "{color.grey.800}"
-      },
-      "850": {
-        "$value": "{color.grey.850}"
-      }
-    },
     "wheel": {
       "100": {
         "$value": "{color.gold.100}"
@@ -164,6 +114,56 @@
       },
       "900": {
         "$value": "{color.red.900}"
+      }
+    },
+    "neutral": {
+      "50": {
+        "$value": "{color.grey.50}"
+      },
+      "75": {
+        "$value": "{color.grey.75}"
+      },
+      "100": {
+        "$value": "{color.grey.100}"
+      },
+      "200": {
+        "$value": "{color.grey.200}"
+      },
+      "250": {
+        "$value": "{color.grey.250}"
+      },
+      "300": {
+        "$value": "{color.grey.300}"
+      },
+      "400": {
+        "$value": "{color.grey.400}"
+      },
+      "450": {
+        "$value": "{color.grey.450}"
+      },
+      "500": {
+        "$value": "{color.grey.500}"
+      },
+      "550": {
+        "$value": "{color.grey.550}"
+      },
+      "600": {
+        "$value": "{color.grey.600}"
+      },
+      "650": {
+        "$value": "{color.grey.650}"
+      },
+      "700": {
+        "$value": "{color.grey.700}"
+      },
+      "750": {
+        "$value": "{color.grey.750}"
+      },
+      "800": {
+        "$value": "{color.grey.800}"
+      },
+      "850": {
+        "$value": "{color.grey.850}"
       }
     }
   },

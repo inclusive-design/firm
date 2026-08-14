@@ -6,15 +6,14 @@ header {
 .global {
     background: var(--firm-color-nav-global-surface);
     color: var(--firm-color-nav-global-content);
+
+    a {
+       color: currentColor;
+    }
 }
 
 .global .wrapper {
     padding-block: var(--firm-space-fluid-md);
-}
-
-.global a {
-    --_surface-color: transparent;
-    --_content-color: currentColor;
 }
 
 .hero {
