@@ -2,7 +2,7 @@
   "shadow": {
     "$type": "shadow",
     "link": {
-      "hover": {
+      "default": {
         "$value": {
           "offsetX": {
             "value": 0,
@@ -17,31 +17,201 @@
             "unit": "px"
           },
           "spread": {
-            "value": 1.5,
+            "value": 4,
             "unit": "px"
           },
-          "color": "{color.action.border.hover}"
+          "color": "{color.action.surface.default}"
         }
       },
+      "hover": {
+        "$value": [
+          {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 3,
+              "unit": "px"
+            },
+            "color": "{color.action.surface.default}"
+          },
+          {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 4,
+              "unit": "px"
+            },
+            "color": "{color.action.border.hover}"
+          }
+        ]
+      },
       "focus": {
-        "$value": {
-          "offsetX": {
-            "value": 0,
-            "unit": "px"
+        "$value": [
+          {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 3,
+              "unit": "px"
+            },
+            "color": "{color.action.surface.focus}"
           },
-          "offsetY": {
-            "value": 0,
-            "unit": "px"
-          },
-          "blur": {
-            "value": 0,
-            "unit": "px"
-          },
-          "spread": {
-            "value": 1.5,
-            "unit": "px"
-          },
-          "color": "{color.action.border.focus}"
+          {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 4,
+              "unit": "px"
+            },
+            "color": "{color.action.border.focus}"
+          }
+        ]
+      },
+      "inverse": {
+        "default": {
+          "$value": {
+            "offsetX": {
+              "value": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "value": 0,
+              "unit": "px"
+            },
+            "blur": {
+              "value": 0,
+              "unit": "px"
+            },
+            "spread": {
+              "value": 4,
+              "unit": "px"
+            },
+            "color": "{color.action.inverse.border.default}"
+          }
+        },
+        "hover": {
+          "$value": [
+            {
+              "offsetX": {
+                "value": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "value": 0,
+                "unit": "px"
+              },
+              "blur": {
+                "value": 0,
+                "unit": "px"
+              },
+              "spread": {
+                "value": 3,
+                "unit": "px"
+              },
+              "color": "{color.action.inverse.surface.default}"
+            },
+            {
+              "offsetX": {
+                "value": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "value": 0,
+                "unit": "px"
+              },
+              "blur": {
+                "value": 0,
+                "unit": "px"
+              },
+              "spread": {
+                "value": 4,
+                "unit": "px"
+              },
+              "color": "{color.action.inverse.border.hover}"
+            }
+          ]
+        },
+        "focus": {
+          "$value": [
+            {
+              "offsetX": {
+                "value": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "value": 0,
+                "unit": "px"
+              },
+              "blur": {
+                "value": 0,
+                "unit": "px"
+              },
+              "spread": {
+                "value": 3,
+                "unit": "px"
+              },
+              "color": "{color.action.inverse.surface.focus}"
+            },
+            {
+              "offsetX": {
+                "value": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "value": 0,
+                "unit": "px"
+              },
+              "blur": {
+                "value": 0,
+                "unit": "px"
+              },
+              "spread": {
+                "value": 4,
+                "unit": "px"
+              },
+              "color": "{color.action.inverse.border.focus}"
+            }
+          ]
         }
       }
     },

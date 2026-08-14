@@ -3,6 +3,9 @@ import { defineConfig } from '@sugarcube-sh/cli';
 export default defineConfig({
 	resolver: 'src/design-tokens/tokens.resolver.json',
 	components: 'src/assets/styles/components/ui',
+	content: [
+		'src/includes/**/*.vto',
+	],
 	cube: 'src/assets/styles',
 	variables: {
 		path: 'dist/tokens.css',
@@ -28,10 +31,12 @@ export default defineConfig({
 		},
 	},
 	utilities: {
+		path: 'dist/utilities.css',
 		classes: {
 			'font-size': {
 				source: 'size.fluid.*',
 				prefix: 'step',
+				safelist: true,
 			},
 		},
 	},

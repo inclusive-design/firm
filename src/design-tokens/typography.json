@@ -122,32 +122,5 @@
       "$value": "{text.base}"
     },
     "$type": "dimension"
-  },
-  "leading": {
-    "relaxed": {
-      "$value": {
-        "value": 1.6,
-        "unit": "px"
-      }
-    },
-    "normal": {
-      "$value": {
-        "value": 1.4,
-        "unit": "px"
-      }
-    },
-    "tight": {
-      "$value": {
-        "value": 1.2,
-        "unit": "px"
-      }
-    },
-    "none": {
-      "$value": {
-        "value": 1,
-        "unit": "px"
-      }
-    },
-    "$type": "number"
   }
 }

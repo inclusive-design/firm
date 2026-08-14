@@ -10,5 +10,6 @@
 @import url("./compositions/switcher.css");
 @import url("./compositions/wrapper.css");
 @import url("./utilities/flex.css");
+@import url("./utilities/inverse.css");
 @import url("./utilities/region.css");
 @import url("./utilities/visually-hidden.css");

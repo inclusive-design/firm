@@ -2798,52 +2798,6 @@
           "mode": {}
         }
       }
-    },
-    "leading": {
-      "relaxed": {
-        "$type": "dimension",
-        "$value": {
-          "value": 1.6,
-          "unit": "px"
-        },
-        "$description": "",
-        "$extensions": {
-          "mode": {}
-        }
-      },
-      "normal": {
-        "$type": "dimension",
-        "$value": {
-          "value": 1.4,
-          "unit": "px"
-        },
-        "$description": "",
-        "$extensions": {
-          "mode": {}
-        }
-      },
-      "tight": {
-        "$type": "dimension",
-        "$value": {
-          "value": 1.2,
-          "unit": "px"
-        },
-        "$description": "",
-        "$extensions": {
-          "mode": {}
-        }
-      },
-      "none": {
-        "$type": "dimension",
-        "$value": {
-          "value": 1,
-          "unit": "px"
-        },
-        "$description": "",
-        "$extensions": {
-          "mode": {}
-        }
-      }
     }
   },
   "palette": {

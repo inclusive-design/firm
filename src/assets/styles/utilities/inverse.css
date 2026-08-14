@@ -1,0 +1,6 @@
+.inverse {
+    --_surface-color: var(--firm-color-neutral-800);
+
+    color: white;
+    background-color: var(--_surface-color);
+}
