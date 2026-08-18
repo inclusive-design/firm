@@ -2,6 +2,7 @@ import { writeFile } from 'node:fs/promises';
 import { RenderPlugin } from '@11ty/eleventy';
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
 import { VentoPlugin } from 'eleventy-plugin-vento';
+import { VitePWA as vitePWA } from 'vite-plugin-pwa';
 import sugarcube from '@sugarcube-sh/vite';
 import synced from './src/design-tokens/synced/design.tokens.json' with { type: 'json' };
 
@@ -15,7 +16,14 @@ export default function eleventy(eleventyConfig) {
 
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {
-			plugins: [sugarcube()],
+			plugins: [
+				sugarcube(),
+				vitePWA({
+					workbox: {
+						globPatterns: ['**/*.{js,css,html,svg,woff2}'],
+					},
+				}),
+			],
 			build: {
 				rolldownOptions: {
 					output: {

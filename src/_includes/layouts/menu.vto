@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }} | FIRM Design System</title>
+    <script type="module" src="/assets/scripts/main.js"></script>
+    <link href="/assets/styles/main.css" rel="stylesheet" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body class="menu">
+    <header>
+        <div class="[ global ] [ inverse ]">
+          <div class="[ wrapper ] [ switcher ] [ step--1 ]">
+            <div>
+              <a rel="external" href="https://idrc.ocadu.ca/">
+                An Inclusive Design Research Centre Project
+              </a>
+            </div>
+            <ul role="list" class="[ flex ]" data-grow="false" data-separator="/">
+              <li>
+                <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page"
+                  >English</a
+                >
+              </li>
+              <li>
+                <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="[ navigation ]">
+        <div class="[ wrapper ]">
+          <div class="[ repel ]">
+            <a rel="home" href="/"> {{ include 'svg/firm-wordmark.svg' }} </a>
+            <a
+              class="button"
+              onClick="history.back();"
+              aria-label="Menu"
+            >
+
+              <svg
+                role="presentation"
+                class="close icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="22"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="m21.375 2-19 18M2.375 2l19 18"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="menu">
+            <ul role="list">
+              <li>
+                <a class="link" href="/en/chapters/the-case/">The Case</a>
+              </li>
+
+              <li>
+                <a class="link" href="/en/chapters/frameworks/">Frameworks</a>
+
+                <button
+                  class="button"
+                  aria-expanded="false"
+                  aria-label="Frameworks"
+                >
+                  <img
+                    src="/assets/images/disclosure.svg"
+                    alt=""
+                    class="print"
+                  /><svg
+                    class="web"
+                    role="presentation"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    fill="none"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m6 9.5 6 6 6-6"
+                    ></path>
+                  </svg>
+                </button>
+                <ul role="list">
+                  <li>
+                    <a
+                      class="link"
+                      href="/en/chapters/frameworks/#hierarchy-of-needs-at-financial-institutions"
+                      >Hierarchy of Needs</a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="link"
+                      href="/en/chapters/frameworks/#wheel-of-financial-stability"
+                      >Wheel of Financial Stability</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a class="link" href="/en/chapters/narratives/">Narratives</a>
+
+                <button class="button" aria-expanded="false" aria-label="Narratives">
+                  <img
+                    src="/assets/images/disclosure.svg"
+                    alt=""
+                    class="print"
+                  /><svg
+                    class="web"
+                    role="presentation"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="25"
+                    fill="none"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m6 9.5 6 6 6-6"
+                    ></path>
+                  </svg>
+                </button>
+                <ul role="list">
+                  <li>
+                    <a class="link" href="/en/chapters/narrative-1-james/"
+                      >Narrative 1: James</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="link" href="/en/chapters/narrative-2-althea/"
+                      >Narrative 2: Althea</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="link" href="/en/chapters/narrative-3-lakshmi/"
+                      >Narrative 3: Lakshmi</a
+                    >
+                  </li>
+
+                  <li>
+                    <a class="link" href="/en/chapters/narrative-4-ki/"
+                      >Narrative 4: Ki</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a class="link" href="/en/chapters/activities/">Activities</a>
+              </li>
+
+              <li>
+                <a class="link" href="/en/downloads/">Downloads</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    {{ include 'layouts/partials/sw.vto' }}
+  </body>
+</html>
