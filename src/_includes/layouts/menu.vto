@@ -35,7 +35,8 @@
             <a rel="home" href="/"> {{ include 'svg/firm-wordmark.svg' }} </a>
             <a
               class="button"
-              onClick="history.back();"
+              href="/"
+              onClick="document.referrer ? history.back() : window.location.href = '/'; return false;"
               aria-label="Menu"
             >
 
