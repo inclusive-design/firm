@@ -899,15 +899,19 @@ dialog:modal::backdrop {
 }
 
 /* ============================================
+   View Transitions
+   ============================================ */
+
+@view-transition {
+  navigation: auto;
+}
+
+/* ============================================
    Accessibility / Utilities
    ============================================ */
 
 [hidden] {
     display: none !important;
-}
-
-@view-transition {
-  navigation: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -16,30 +16,6 @@ header {
     padding-block: var(--firm-space-fluid-md);
 }
 
-.menu .navigation {
-    min-height: 100vh;
-}
-
-.navigation {
-    background: var(--firm-color-nav-surface-default);
-    color: var(--firm-color-nav-content-default);
-}
-
-.navigation a {
-    color: var(--firm-color-nav-content-default);
-    text-decoration: none;
-}
-
-.navigation .repel > .button {
-    background: inherit;
-    color: inherit;
-    border-radius: 0;
-    padding-inline: 0;
-    gap: 0;
-    height: 48px;
-    width: 48px;
-}
-
 .hero {
     background: var(--firm-color-hero-surface);
     color: var(--firm-color-hero-content-default);

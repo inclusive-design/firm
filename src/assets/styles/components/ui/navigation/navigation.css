@@ -1,0 +1,70 @@
+.menu .navigation {
+    min-height: 100vh;
+}
+
+.navigation {
+    background: var(--firm-color-nav-surface-default);
+    color: var(--firm-color-nav-content-default);
+}
+
+.navigation a {
+    color: var(--firm-color-nav-content-default);
+    text-decoration: none;
+}
+
+.navigation a[rel="home"] svg {
+    max-width: 30vw;
+}
+
+.navigation .repel {
+    min-height: calc(96 / 16 * 1rem);
+}
+
+.navigation .repel > .button {
+    background: inherit;
+    color: inherit;
+    border-radius: 0;
+    padding-inline: 0;
+    gap: 0;
+    height: 48px;
+    width: 48px;
+}
+
+.navigation .repel > .button:hover {
+    background-color: var(--firm-color-action-surface-hover);
+    box-shadow: none;
+    color: var(--firm-color-action-content-hover);
+}
+
+.navigation .repel > .button:focus,
+.navigation .repel > .button:active {
+    background-color: var(--firm-color-action-surface-focus);
+    box-shadow: none;
+    color: var(--firm-color-action-content-focus);
+}
+
+.navigation ul[role="list"] {
+    list-style: none;
+
+    li {
+        margin-inline-start: 0;
+        width: 100%;
+
+        a {
+            display: block;
+            width: 100%;
+        }
+
+        .button {
+            display: none;
+        }
+
+        > ul {
+            margin-inline-start: 0;
+
+            a {
+                padding-inline-start: calc(48 / 16 * 1rem);
+            }
+        }
+    }
+}

@@ -1,58 +1,169 @@
 {
   "space": {
-    "$type": "dimension",
-    "fluid": {
-      "$extensions": {
-        "sh.sugarcube": {
-          "scale": {
-            "mode": "multipliers",
-            "viewport": {
-              "min": 320,
-              "max": 1440
-            },
-            "base": {
-              "min": {
-                "value": 1,
-                "unit": "rem"
-              },
-              "max": {
-                "value": 2,
-                "unit": "rem"
-              }
-            },
-            "multipliers": {
-              "2xs": 0.625,
-              "xs": 0.75,
-              "sm": 1,
-              "md": 1.5,
-              "lg": 2,
-              "xl": 2.5,
-              "2xl": 3,
-              "3xl": 3.75,
-              "4xl": 4.375,
-              "5xl": 6,
-              "6xl": 7,
-              "7xl": 14
-            },
-            "pairs": [
-              "2xs-xs",
-              "xs-sm",
-              "sm-md",
-              "md-lg",
-              "lg-xl",
-              "xl-2xl",
-              "2xl-3xl",
-              "3xl-4xl",
-              "4xl-5xl",
-              "5xl-6xl",
-              "6xl-7xl",
-              "xs-2xs",
-              "lg-6xl",
-              "4xl-lg",
-              "5xl-3xl"
-            ]
-          }
-        }
+    "100": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    },
+    "150": {
+      "$type": "dimension",
+      "$value": {
+        "value": 6,
+        "unit": "px"
+      }
+    },
+    "200": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "300": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      }
+    },
+    "400": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      }
+    },
+    "450": {
+      "$type": "dimension",
+      "$value": {
+        "value": 18,
+        "unit": "px"
+      }
+    },
+    "500": {
+      "$type": "dimension",
+      "$value": {
+        "value": 20,
+        "unit": "px"
+      }
+    },
+    "600": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      }
+    },
+    "800": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "1000": {
+      "$type": "dimension",
+      "$value": {
+        "value": 40,
+        "unit": "px"
+      }
+    },
+    "1200": {
+      "$type": "dimension",
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      }
+    },
+    "1400": {
+      "$type": "dimension",
+      "$value": {
+        "value": 56,
+        "unit": "px"
+      }
+    },
+    "1600": {
+      "$type": "dimension",
+      "$value": {
+        "value": 64,
+        "unit": "px"
+      }
+    },
+    "1800": {
+      "$type": "dimension",
+      "$value": {
+        "value": 72,
+        "unit": "px"
+      }
+    },
+    "2000": {
+      "$type": "dimension",
+      "$value": {
+        "value": 80,
+        "unit": "px"
+      }
+    },
+    "3000": {
+      "$type": "dimension",
+      "$value": {
+        "value": 120,
+        "unit": "px"
+      }
+    },
+    "5600": {
+      "$type": "dimension",
+      "$value": {
+        "value": 224,
+        "unit": "px"
+      }
+    },
+    "000": {
+      "$type": "dimension",
+      "$value": {
+        "value": 0,
+        "unit": "px"
+      }
+    },
+    "025": {
+      "$type": "dimension",
+      "$value": {
+        "value": 1,
+        "unit": "px"
+      }
+    },
+    "050": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    },
+    "fixed": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{space.300}"
+      },
+      "m": {
+        "$type": "dimension",
+        "$value": "{space.600}"
+      },
+      "l": {
+        "$type": "dimension",
+        "$value": "{space.800}"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{space.1000}"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "{space.1200}"
+      },
+      "s": {
+        "$type": "dimension",
+        "$value": "{space.400}"
       }
     }
   }

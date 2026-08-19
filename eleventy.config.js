@@ -46,7 +46,7 @@ export default function eleventy(eleventyConfig) {
 		if (firstRun) {
 			firstRun = false;
 
-			const { palette, aliases, colors, borders, typography } = synced;
+			const { palette, aliases, colors, borders, space, typography } = synced;
 
 			/**
 			 * Recursively replace theme colors with value from Cobalt's legacy mode format.
@@ -144,13 +144,14 @@ export default function eleventy(eleventyConfig) {
 			 */
 			removePrefixes(aliases, ['palette']);
 			removePrefixes(colors, ['palette', 'aliases', 'colors']);
+			removePrefixes(space, ['space']);
 			removePrefixes(themes, ['palette', 'aliases', 'colors']);
 			removePrefixes(typography, ['typography', 'responsive']);
 
 			/**
 			 * 4. Remove extraneous properties.
 			 */
-			for (const object of [palette, aliases, colors, borders, typography]) {
+			for (const object of [palette, aliases, colors, borders, space, typography]) {
 				removeExtraProperties(object, ['$extensions', '$description']);
 			}
 
@@ -185,7 +186,7 @@ export default function eleventy(eleventyConfig) {
 			/** 6. Write to individual token files. */
 
 			for (const [key, value] of Object.entries({
-				palette, aliases, colors, borders, typography,
+				palette, aliases, colors, borders, space, typography,
 			})) {
 				writeFile(`./src/design-tokens/${key}.json`, JSON.stringify(value, null, 2), 'utf8', (error) => {
 					if (error) {
