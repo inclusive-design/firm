@@ -4180,6 +4180,17 @@
           "mode": {}
         }
       },
+      "2400": {
+        "$type": "dimension",
+        "$value": {
+          "value": 96,
+          "unit": "px"
+        },
+        "$description": "",
+        "$extensions": {
+          "mode": {}
+        }
+      },
       "3000": {
         "$type": "dimension",
         "$value": {
@@ -4301,7 +4312,7 @@
         "palette",
         "space"
       ],
-      "createdAt": "2026-08-19T13:32:00.239Z"
+      "createdAt": "2026-08-19T14:43:25.476Z"
     }
   }
 }
