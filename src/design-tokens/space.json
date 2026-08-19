@@ -145,11 +145,11 @@
         "$type": "dimension",
         "$value": "{space.300}"
       },
-      "m": {
+      "md": {
         "$type": "dimension",
         "$value": "{space.600}"
       },
-      "l": {
+      "lg": {
         "$type": "dimension",
         "$value": "{space.800}"
       },
@@ -161,7 +161,7 @@
         "$type": "dimension",
         "$value": "{space.1200}"
       },
-      "s": {
+      "sm": {
         "$type": "dimension",
         "$value": "{space.400}"
       }

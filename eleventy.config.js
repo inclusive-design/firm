@@ -151,6 +151,8 @@ export default function eleventy(eleventyConfig) {
 			/**
 			 * 4. Remove extraneous properties.
 			 */
+			removeExtraProperties(typography, ['leading']);
+
 			for (const object of [palette, aliases, colors, borders, space, typography]) {
 				removeExtraProperties(object, ['$extensions', '$description']);
 			}
