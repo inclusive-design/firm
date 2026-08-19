@@ -2798,6 +2798,52 @@
           "mode": {}
         }
       }
+    },
+    "leading": {
+      "relaxed": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.6,
+          "unit": "px"
+        },
+        "$description": "",
+        "$extensions": {
+          "mode": {}
+        }
+      },
+      "normal": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.4,
+          "unit": "px"
+        },
+        "$description": "",
+        "$extensions": {
+          "mode": {}
+        }
+      },
+      "tight": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1.2,
+          "unit": "px"
+        },
+        "$description": "",
+        "$extensions": {
+          "mode": {}
+        }
+      },
+      "none": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "px"
+        },
+        "$description": "",
+        "$extensions": {
+          "mode": {}
+        }
+      }
     }
   },
   "palette": {
@@ -4198,7 +4244,7 @@
             "mode": {}
           }
         },
-        "m": {
+        "md": {
           "$type": "dimension",
           "$value": "{space.space.600}",
           "$description": "",
@@ -4206,7 +4252,7 @@
             "mode": {}
           }
         },
-        "l": {
+        "lg": {
           "$type": "dimension",
           "$value": "{space.space.800}",
           "$description": "",
@@ -4230,7 +4276,7 @@
             "mode": {}
           }
         },
-        "s": {
+        "sm": {
           "$type": "dimension",
           "$value": "{space.space.400}",
           "$description": "",
@@ -4255,7 +4301,7 @@
         "palette",
         "space"
       ],
-      "createdAt": "2026-08-13T22:17:02.666Z"
+      "createdAt": "2026-08-19T13:32:00.239Z"
     }
   }
 }
