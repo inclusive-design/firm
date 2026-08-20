@@ -1204,11 +1204,11 @@
             },
             "focus": {
               "$type": "color",
-              "$value": "{aliases.color.primary.600}",
+              "$value": "{aliases.color.neutral.800}",
               "$description": "",
               "$extensions": {
                 "mode": {
-                  "default": "{aliases.color.primary.600}",
+                  "default": "{aliases.color.neutral.800}",
                   "dark": "{aliases.color.neutral.800}",
                   "bw": "{colors.color.uio.link.content}",
                   "wb": "{colors.color.uio.link.content}",
@@ -4350,7 +4350,7 @@
         "palette",
         "space"
       ],
-      "createdAt": "2026-08-20T15:44:14.251Z"
+      "createdAt": "2026-08-20T15:45:19.033Z"
     }
   }
 }
