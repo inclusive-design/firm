@@ -20,7 +20,17 @@ export default function eleventy(eleventyConfig) {
 				sugarcube(),
 				vitePWA({
 					workbox: {
-						globPatterns: ['**/*.{js,css,html,svg,woff2}'],
+						runtimeCaching: [
+							{
+								globPatterns: ['**/*.{svg,woff2'],
+								handler: 'CacheFirst',
+							},
+							{
+								globPatterns: ['**/*.{js,css,html'],
+								handler: 'StaleWhileRevalidate',
+							},
+						],
+						skipWaiting: true,
 					},
 				}),
 			],
