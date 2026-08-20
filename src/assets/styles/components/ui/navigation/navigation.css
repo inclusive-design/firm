@@ -12,9 +12,14 @@
 }
 
 .navigation a {
-    border: var(--firm-form-control-border-width) var(--firm-border-style) var(--firm-color-action-border-default);
+    border: var(--firm-form-control-border-width) var(--firm-border-style) var(--firm-color-nav-surface-default);
     color: var(--firm-color-nav-content-default);
     text-decoration: none;
+}
+
+.navigation li li a {
+    background-color: var(--firm-color-nav-secondary-surface-default);
+    border-color: var(--firm-color-nav-secondary-border-default);
 }
 
 .navigation a[rel="home"] svg {
@@ -26,7 +31,7 @@
 }
 
 .navigation .button {
-    background: inherit;
+    background: var(--firm-color-nav-surface-default);
     color: inherit;
     border-radius: 0;
     padding-inline: 0;
@@ -37,20 +42,33 @@
 
 .navigation .button:hover,
 .navigation a:hover {
-    background-color: var(--firm-color-action-surface-hover);
-    border-color: var(--firm-color-action-border-hover);
+    background-color: var(--firm-color-nav-surface-hover);
+    border-color: var(--firm-color-nav-border-hover);
     box-shadow: none;
-    color: var(--firm-color-action-content-hover);
+    color: var(--firm-color-nav-content-hover);
+}
+
+.navigation li li a:hover {
+    background-color: var(--firm-color-nav-secondary-surface-hover);
+    border-color: var(--firm-color-nav-secondary-border-hover);
+    color: var(--firm-color-nav-secondary-content-hover);
 }
 
 .navigation .button:focus,
 .navigation .button:active,
 .navigation a:focus,
 .navigation a:active {
-    background-color: var(--firm-color-action-surface-focus);
-    border-color: var(--firm-color-action-surface-focus);
+    background-color: var(--firm-color-nav-surface-focus);
+    border-color: var(--firm-color-nav-surface-focus);
     box-shadow: none;
-    color: var(--firm-color-action-content-focus);
+    color: var(--firm-color-nav-content-focus);
+}
+
+.navigation li li a:focus,
+.navigation li li a:active {
+    background-color: var(--firm-color-nav-secondary-surface-focus);
+    border-color: var(--firm-color-nav-secondary-border-focus);
+    color: var(--firm-color-nav-secondary-content-focus);
 }
 
 .navigation ul[role="list"] {
