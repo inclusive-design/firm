@@ -148,13 +148,13 @@
       }
     },
     "fixed": {
-      "xs": {
-        "$type": "dimension",
-        "$value": "{space.300}"
-      },
       "md": {
         "$type": "dimension",
         "$value": "{space.600}"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "{space.300}"
       },
       "lg": {
         "$type": "dimension",
