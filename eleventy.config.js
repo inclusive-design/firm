@@ -19,30 +19,12 @@ export default function eleventy(eleventyConfig) {
 			plugins: [
 				sugarcube(),
 				vitePWA({
+					registerType: 'autoUpdate',
 					workbox: {
-						runtimeCaching: [
-							{
-								globPatterns: ['**/*.{svg,woff2'],
-								handler: 'CacheFirst',
-							},
-							{
-								globPatterns: ['**/*.{js,css,html'],
-								handler: 'StaleWhileRevalidate',
-							},
-						],
-						skipWaiting: true,
+						globPatterns: ['**/*.{svg,woff2,js,css,html}'],
 					},
 				}),
 			],
-			build: {
-				rolldownOptions: {
-					output: {
-						entryFileNames: 'assets/[name].js',
-						chunkFileNames: 'assets/[name].js',
-						assetFileNames: 'assets/[name].[ext]',
-					},
-				},
-			},
 		},
 	});
 	eleventyConfig.addPlugin(RenderPlugin);
