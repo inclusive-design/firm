@@ -105,6 +105,13 @@
         "unit": "px"
       }
     },
+    "2400": {
+      "$type": "dimension",
+      "$value": {
+        "value": 96,
+        "unit": "px"
+      }
+    },
     "3000": {
       "$type": "dimension",
       "$value": {

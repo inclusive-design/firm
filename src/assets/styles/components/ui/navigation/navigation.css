@@ -2,12 +2,17 @@
     min-height: 100vh;
 }
 
+.navigation .wrapper {
+    padding: var(--firm-space-fixed-md);
+}
+
 .navigation {
     background: var(--firm-color-nav-surface-default);
     color: var(--firm-color-nav-content-default);
 }
 
 .navigation a {
+    border: var(--firm-form-control-border-width) var(--firm-border-style) var(--firm-color-action-border-default);
     color: var(--firm-color-nav-content-default);
     text-decoration: none;
 }
@@ -17,10 +22,10 @@
 }
 
 .navigation .repel {
-    min-height: calc(96 / 16 * 1rem);
+    min-height: var(--firm-space-2400);
 }
 
-.navigation .repel > .button {
+.navigation .button {
     background: inherit;
     color: inherit;
     border-radius: 0;
@@ -30,41 +35,74 @@
     width: 48px;
 }
 
-.navigation .repel > .button:hover {
+.navigation .button:hover,
+.navigation a:hover {
     background-color: var(--firm-color-action-surface-hover);
+    border-color: var(--firm-color-action-border-hover);
     box-shadow: none;
     color: var(--firm-color-action-content-hover);
 }
 
-.navigation .repel > .button:focus,
-.navigation .repel > .button:active {
+.navigation .button:focus,
+.navigation .button:active,
+.navigation a:focus,
+.navigation a:active {
     background-color: var(--firm-color-action-surface-focus);
+    border-color: var(--firm-color-action-surface-focus);
     box-shadow: none;
     color: var(--firm-color-action-content-focus);
 }
 
 .navigation ul[role="list"] {
     list-style: none;
+    margin-left: calc(-1 * var(--firm-space-fixed-md));
+    position: relative;
+    width: 100vw;
 
     li {
         margin-inline-start: 0;
         width: 100%;
 
         a {
-            display: block;
-            width: 100%;
+            align-items: center;
+            display: flex;
+            height: var(--firm-space-fixed-2xl);
+            padding-inline: var(--firm-space-fixed-md);
+        }
+
+        &:has([aria-expanded]) {
+            display: grid;
+            gap: 0;
+            grid-auto-flow: row;
+            grid-template-columns: auto 1fr;
+
+            > a {
+                width: max-content;
+            }
         }
 
         .button {
-            display: none;
+            display: flex;
+            height: var(--fi-space-fixed-2xl);
+            justify-content: flex-start;
+            padding-left: var(--firm-space-fixed-xs);
+            padding-right: var(--firm-space-fixed-xs);
+            width: 100%;
         }
 
         > ul {
+            display: none;
+            grid-column: 1 / 3;
             margin-inline-start: 0;
 
             a {
-                padding-inline-start: calc(48 / 16 * 1rem);
+                padding-inline-start: var(--firm-space-fixed-2xl);
             }
+        }
+
+        > [aria-expanded="true"] + ul {
+            display: flex;
+            flex-direction: column;
         }
     }
 }

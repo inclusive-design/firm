@@ -853,8 +853,8 @@ dialog {
     border: var(--firm-panel-border-width, 1px) var(--firm-border-style, solid)
         var(--firm-panel-border-color, currentColor);
     border-radius: var(--firm-panel-radius, 0.5rem);
-    max-height: calc(100% - var(--firm-space-xl, 3rem));
-    max-width: calc(100% - var(--firm-space-xl, 3rem));
+    max-height: calc(100% - var(--firm-space-fixed-2xl, 3rem));
+    max-width: calc(100% - var(--firm-space-fixed-2xl, 3rem));
     width: 32em;
 }
 
