@@ -2,15 +2,28 @@
     min-height: 100vh;
 }
 
+.brand {
+    display: flex;
+    justify-content: flex-start;
+    height: var(--firm-space-3600, 144px);
+}
+
+.brand .wrapper,
 .navigation .wrapper {
-    padding: var(--firm-space-fixed-md);
+    padding-inline: var(--firm-space-fixed-md);
+}
+
+.brand,
+.navigation {
+    color: var(--firm-color-nav-content-default);
 }
 
 .navigation {
     background: var(--firm-color-nav-surface-default);
-    color: var(--firm-color-nav-content-default);
+    margin-block-start: calc(-1 * var(--firm-space-3600, 144px));
 }
 
+.brand a,
 .navigation a {
     border: var(--firm-form-control-border-width) var(--firm-border-style) var(--firm-color-nav-surface-default);
     color: var(--firm-color-nav-content-default);
@@ -22,12 +35,19 @@
     border-color: var(--firm-color-nav-secondary-border-default);
 }
 
-.navigation a[rel="home"] svg {
+.brand a {
+    display: inline-block;
+}
+
+.brand a svg {
     max-width: 30vw;
 }
 
-.navigation .repel {
-    min-height: var(--firm-space-2400);
+.navigation .menu-toggle {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: var(--firm-space-3600, 144px);
 }
 
 .navigation .button {
@@ -40,6 +60,7 @@
     width: 48px;
 }
 
+.brand a:hover,
 .navigation .button:hover,
 .navigation a:hover {
     background-color: var(--firm-color-nav-surface-hover);
@@ -54,6 +75,8 @@
     color: var(--firm-color-nav-secondary-content-hover);
 }
 
+.brand a:focus,
+.brand a:active,
 .navigation .button:focus,
 .navigation .button:active,
 .navigation a:focus,

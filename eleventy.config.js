@@ -19,7 +19,6 @@ export default function eleventy(eleventyConfig) {
 			plugins: [
 				sugarcube(),
 				vitePWA({
-					registerType: 'autoUpdate',
 					workbox: {
 						globPatterns: ['**/*.{svg,woff2,js,css,html}'],
 					},

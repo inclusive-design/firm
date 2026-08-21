@@ -1,12 +1,7 @@
 <!doctype html>
 <html lang="en-ca">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }} | FIRM Design System</title>
-    <script type="module" src="/assets/scripts/main.js"></script>
-    <link href="/assets/styles/main.css" rel="stylesheet" />
-    <link rel="preload" as="font" type="font/woff2" crossorigin>
+      {{ include 'layouts/partials/meta.vto' }}
   </head>
   <body class="menu">
     <header>
@@ -29,10 +24,10 @@
             </ul>
           </div>
         </div>
+        <div class="[ brand ]"><a rel="home" href="/"> {{ include 'svg/firm-wordmark.svg' }} </a></div>
         <nav class="[ navigation ]">
         <div class="[ wrapper ]">
-          <div class="[ repel ]">
-            <a rel="home" href="/"> {{ include 'svg/firm-wordmark.svg' }} </a>
+          <div class="[ menu-toggle ]">
             <a
               class="button"
               href="/"
