@@ -24,10 +24,13 @@
             </ul>
           </div>
         </div>
-        <div class="[ brand ]"><a rel="home" href="/"> {{ include 'svg/firm-wordmark.svg' }} </a></div>
+        <div class="[ brand ]">
+            <a rel="home" href="/" aria-label="Financial Inclusion and Resilience Movement"> {{ include 'svg/firm-wordmark.svg' }} </a>
+        </div>
     </header>
     <main>
-        <nav class="[ navigation ]">
+        <h1 class="visually-hidden" id="site-menu">Site Navigation</h1>
+        <nav class="[ navigation ]" aria-labelledby="site-menu">
         <div class="[ wrapper ]">
           <div class="[ menu-toggle ]">
             <a
