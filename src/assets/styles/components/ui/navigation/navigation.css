@@ -6,6 +6,9 @@
     display: flex;
     justify-content: flex-start;
     height: var(--firm-space-3600, 144px);
+    width: max-content;
+    position: relative;
+    z-index: 1;
 }
 
 .brand .wrapper,
@@ -20,6 +23,8 @@
 
 .navigation {
     background: var(--firm-color-nav-surface-default);
+    font-family: var(--firm-font-display);
+    font-weight: var(--firm-font-weight-semibold);
     margin-block-start: calc(-1 * var(--firm-space-3600, 144px));
 }
 
