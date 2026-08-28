@@ -1,0 +1,43 @@
+/* ============================================
+   Brand Styles
+   ============================================ */
+.wrapper:has(.brand) {
+    padding-inline: var(--firm-space-fixed-md);
+}
+
+.brand {
+    color: var(--firm-color-nav-content-default);
+    height: var(--firm-space-3600, 144px);
+    margin-left: calc(-1 * var(--firm-space-fixed-md));
+    max-width: 50%;
+    position: relative;
+    width: max-content;
+    z-index: 1;
+
+    a {
+        border: var(--firm-form-control-border-width) var(--firm-border-style) var(--firm-color-nav-surface-default);
+        color: var(--firm-color-nav-content-default);
+        display: inline-block;
+        height: inherit;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: var(--firm-color-nav-surface-hover);
+        border-color: var(--firm-color-nav-border-hover);
+        box-shadow: none;
+        color: var(--firm-color-nav-content-hover);
+    }
+
+    a:focus,
+    a:active {
+        background-color: var(--firm-color-nav-surface-focus);
+        border-color: var(--firm-color-nav-surface-focus);
+        box-shadow: none;
+        color: var(--firm-color-nav-content-focus);
+    }
+
+    svg {
+        max-width: 30vw;
+    }
+}
