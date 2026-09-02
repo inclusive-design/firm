@@ -1,9 +1,4 @@
-import 'virtual:sugarcube.css';
+/* eslint-disable no-unused-vars */
 
-const disclosureButtons = document.querySelectorAll('[aria-expanded]');
-for (const button of disclosureButtons) {
-	button.addEventListener('click', (_event) => {
-		const expanded = button.getAttribute('aria-expanded') === 'true' || false;
-		button.setAttribute('aria-expanded', !expanded);
-	});
-}
+import 'virtual:sugarcube.css';
+import { Nav } from '@inclusive-design/nav';

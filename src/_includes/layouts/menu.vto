@@ -32,6 +32,7 @@
     </header>
     <main>
         <h1 class="visually-hidden" id="site-menu">Site Navigation</h1>
+        <incd-nav>
         <nav class="[ navigation ]" aria-labelledby="site-menu">
         <div class="[ wrapper ]">
           <div class="[ menu-toggle ]">
@@ -63,14 +64,6 @@
             <ul role="list">
               <li>
                 <a class="link" aria-current="page" href="/#about">About</a>
-
-                <button
-                  class="button"
-                  aria-expanded="false"
-                  aria-label="About"
-                >
-                  {{ include 'svg/disclosure.svg' }}
-                </button>
                 <ul role="list">
                   <li>
                     <a
@@ -88,14 +81,6 @@
 
               <li>
                 <a class="link" href="/#knowledge-hub">Knowledge Hub</a>
-
-                <button
-                  class="button"
-                  aria-expanded="false"
-                  aria-label="Knowledge Hub"
-                >
-                  {{ include 'svg/disclosure.svg' }}
-                </button>
                 <ul role="list">
                   <li>
                     <a class="link" href="/#submit-resources"
@@ -113,14 +98,6 @@
 
               <li>
                 <a class="link" href="/#members">Members</a>
-
-                <button
-                  class="button"
-                  aria-expanded="false"
-                  aria-label="Members"
-                >
-                  {{ include 'svg/disclosure.svg' }}
-                </button>
                 <ul role="list">
                   <li>
                     <a class="link" href="/#organization-directory"
@@ -137,14 +114,6 @@
               </li>
               <li>
                 <a class="link" href="/#patrons">Patrons</a>
-
-                <button
-                  class="button"
-                  aria-expanded="false"
-                  aria-label="Patrons"
-                >
-                  {{ include 'svg/disclosure.svg' }}
-                </button>
                 <ul role="list">
                   <li>
                     <a class="link" href="/#mailing-lis"
@@ -156,7 +125,8 @@
             </ul>
         </div>
       </nav>
-    </header>
-    {{ include 'layouts/partials/sw.vto' }}
+    </incd-nav>
+    </main>
+    <!--{{ include 'layouts/partials/sw.vto' }}-->
   </body>
 </html>

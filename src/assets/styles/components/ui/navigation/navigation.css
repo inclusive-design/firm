@@ -139,8 +139,24 @@
         color: var(--firm-color-nav-secondary-content-focus);
     }
 
-    .button {
-        background: var(--firm-color-nav-surface-default);
+    button,
+   .button {
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        cursor: pointer;
+        white-space: nowrap;
+        font-family: var(--firm-font-display);
+        font-size: var(--firm-form-control-font-size, var(--firm-text-base));
+        font-weight: var(--firm-font-weight-semibold);
+        min-height: var(--_form-control-height);
+        transition-property: color, background-color, border-color;
+        transition-timing-function: var(--firm-ease-out);
+        transition-duration: var(--firm-transition-normal);
+
+        background-color: var(--firm-color-nav-surface-default);
         color: inherit;
         border: 0;
         border-radius: 0;
@@ -150,7 +166,8 @@
         width: var(--firm-space-1200);
     }
 
-    .button:hover {
+    button:hover,
+   .button:hover {
         background-color: var(--firm-color-nav-surface-hover);
         border-color: var(--firm-color-nav-border-hover);
         box-shadow:
@@ -158,14 +175,17 @@
         color: var(--firm-color-nav-content-hover);
     }
 
+    button:focus,
+    button:active,
     .button:focus,
-    .button:active {
+    .button:active  {
         background-color: var(--firm-color-nav-surface-focus);
         box-shadow: none;
         color: var(--firm-color-nav-content-focus);
+        outline: 1px solid transparent;
     }
 
-    .button[aria-expanded="true"] {
+    button[aria-expanded="true"] {
         box-shadow: calc(-1 * var(--firm-space-fixed-2xs, 8px)) var(--firm-space-fixed-2xs, 8px) 0 var(--firm-color-nav-content-default) inset;
     }
 
@@ -263,7 +283,7 @@
         width: 100%;
     }
 
-    .button {
+    button {
         display: flex;
         height: var(--fi-space-fixed-2xl);
         justify-content: flex-start;
