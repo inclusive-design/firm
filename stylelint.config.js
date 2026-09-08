@@ -1,6 +1,6 @@
 export default {
 	extends: '@inclusive-design/stylelint-config',
-	ignoreFiles: ['_site/**'],
+	ignoreFiles: ['dist/**', '_site/**'],
 	rules: {
 		'custom-property-pattern': undefined,
 		'declaration-empty-line-before': undefined,
