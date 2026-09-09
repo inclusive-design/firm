@@ -39,7 +39,7 @@
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-navigation": "^1.0.0",
     "@11ty/eleventy-plugin-vite": "^8.0.0",
-    "@inclusive-design/nav": "^0.2.0",
+    "@inclusive-design/components": "^0.1.0",
     "eleventy-plugin-vento": "^6.0.0"
   },
   "devDependencies": {
