@@ -56,6 +56,81 @@ body {
 /* ============================================
    Typography
    ============================================ */
+
+
+@font-face {
+    font-display: swap;
+    font-family: Diphylleia;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/diphylleia-400.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/merriweather-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 400;
+  src: url('../../fonts/merriweather-400-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../fonts/merriweather-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 600;
+  src: url('../../fonts/merriweather-600-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/merriweather-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: 700;
+  src: url('../../fonts/merriweather-700-italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  src: url('../../fonts/mulish-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  src: url('../../fonts/mulish-800.woff2') format('woff2');
+}
+
 h1,
 .h1,
 h2,
@@ -778,8 +853,8 @@ dialog {
     border: var(--firm-panel-border-width, 1px) var(--firm-border-style, solid)
         var(--firm-panel-border-color, currentColor);
     border-radius: var(--firm-panel-radius, 0.5rem);
-    max-height: calc(100% - var(--firm-space-xl, 3rem));
-    max-width: calc(100% - var(--firm-space-xl, 3rem));
+    max-height: calc(100% - var(--firm-space-fixed-2xl, 3rem));
+    max-width: calc(100% - var(--firm-space-fixed-2xl, 3rem));
     width: 32em;
 }
 
@@ -821,6 +896,14 @@ dialog:modal::backdrop {
 
 :target {
     scroll-margin-block: 5ex;
+}
+
+/* ============================================
+   View Transitions
+   ============================================ */
+
+@view-transition {
+  navigation: auto;
 }
 
 /* ============================================

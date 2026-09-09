@@ -3,17 +3,19 @@ header {
     font-weight: var(--firm-font-weight-semibold);
 }
 
-.global {
+.global.inverse {
     background: var(--firm-color-nav-global-surface);
     color: var(--firm-color-nav-global-content);
+    display: flex;
+    min-height: var(--firm-space-2000);
 
     a {
        color: currentColor;
     }
 }
 
-.global .wrapper {
-    padding-block: var(--firm-space-fluid-md);
+.global .switcher {
+    --firm-switcher-gap: 0;
 }
 
 .hero {

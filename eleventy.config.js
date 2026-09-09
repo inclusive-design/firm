@@ -2,6 +2,7 @@ import { writeFile } from 'node:fs/promises';
 import { RenderPlugin } from '@11ty/eleventy';
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
 import { VentoPlugin } from 'eleventy-plugin-vento';
+import { VitePWA as vitePWA } from 'vite-plugin-pwa';
 import sugarcube from '@sugarcube-sh/vite';
 import synced from './src/design-tokens/synced/design.tokens.json' with { type: 'json' };
 
@@ -15,16 +16,14 @@ export default function eleventy(eleventyConfig) {
 
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {
-			plugins: [sugarcube()],
-			build: {
-				rolldownOptions: {
-					output: {
-						entryFileNames: 'assets/[name].js',
-						chunkFileNames: 'assets/[name].js',
-						assetFileNames: 'assets/[name].[ext]',
+			plugins: [
+				sugarcube(),
+				vitePWA({
+					workbox: {
+						globPatterns: ['**/*.{svg,woff2,js,css,html}'],
 					},
-				},
-			},
+				}),
+			],
 		},
 	});
 	eleventyConfig.addPlugin(RenderPlugin);
@@ -41,7 +40,7 @@ export default function eleventy(eleventyConfig) {
 
 		isFirstRun = false;
 
-		const { palette, aliases, colors, borders, typography } = synced;
+		const { palette, aliases, colors, borders, space, typography } = synced;
 
 		/**
 		 * Recursively replace theme colors with value from Cobalt's legacy mode format.
@@ -141,13 +140,16 @@ export default function eleventy(eleventyConfig) {
 		 */
 		removePrefixes(aliases, ['palette']);
 		removePrefixes(colors, ['palette', 'aliases', 'colors']);
+		removePrefixes(space, ['space']);
 		removePrefixes(themes, ['palette', 'aliases', 'colors']);
 		removePrefixes(typography, ['typography', 'responsive']);
 
 		/**
 		 * 4. Remove extraneous properties.
 		 */
-		for (const object of [palette, aliases, colors, borders, typography]) {
+		removeExtraProperties(typography, ['leading']);
+
+		for (const object of [palette, aliases, colors, borders, space, typography]) {
 			removeExtraProperties(object, ['$extensions', '$description']);
 		}
 
@@ -184,7 +186,7 @@ export default function eleventy(eleventyConfig) {
 		 */
 
 		for (const [key, value] of Object.entries({
-			palette, aliases, colors, borders, typography,
+			palette, aliases, colors, borders, space, typography,
 		})) {
 			writeFile(`./src/design-tokens/${key}.json`, JSON.stringify(value, null, 2), 'utf8', (error) => {
 				if (error) {

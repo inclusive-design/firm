@@ -10,6 +10,10 @@ export default {
 			true,
 			{ ignoreProperties: ['clip'] },
 		],
+		'at-rule-no-unknown': [
+			true,
+			{ ignoreAtRules: ['view-transition'] },
+		],
 		'property-no-vendor-prefix': [
 			true,
 			{
