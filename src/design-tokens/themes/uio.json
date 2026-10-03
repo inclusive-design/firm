@@ -87,12 +87,18 @@
           "default": {
             "$value": "{color.uio.link.surface}"
           },
+          "hover": {
+            "$value": "{color.uio.link.surface}"
+          },
           "focus": {
             "$value": "{color.uio.link.content}"
           }
         },
         "content": {
           "default": {
+            "$value": "{color.uio.link.content}"
+          },
+          "hover": {
             "$value": "{color.uio.link.content}"
           },
           "focus": {
@@ -180,11 +186,11 @@
           }
         },
         "border": {
-          "default": {
-            "$value": "{color.uio.link.content}"
-          },
           "focus": {
             "$value": "{color.uio.link.surface}"
+          },
+          "default": {
+            "$value": "{color.uio.link.content}"
           },
           "hover": {
             "$value": "{color.uio.link.content}"

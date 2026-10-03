@@ -1,80 +1,190 @@
 <!doctype html>
 <html lang="en-ca">
-<head>
-    <meta charset=utf-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ title }} | FIRM Design System</title>
-    <script type="module" src="/assets/scripts/main.js"></script>
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=diphylleia:400|merriweather:400,400i,600,600i,700,700i|mulish:600,800" rel="stylesheet" />
-    <link href="/assets/styles/main.css" rel="stylesheet" />
-</head>
-<body>
-    <header  class="[ inverse ]">
-        <div class="[ global ]">
-            <div class="[ wrapper ] [ switcher ] [ step--1 ]">
-                <div>
-                    <a rel="external" href="https://idrc.ocadu.ca/">
-                        An Inclusive Design Research Centre Project
-                    </a>
-                </div>
-                <ul role="list" class="[ flex ]" data-grow="false" data-separator="/">
-                    <li>
-                        <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page">English</a>
-                    </li>
-                    <li>
-                        <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
-                    </li>
-                </ul>
-            </div>
+  <head>
+    {{ include 'layouts/partials/meta.vto' }}
+  </head>
+  <body>
+    <header>
+      <div class="[ global ] [ inverse ]">
+        <div class="[ wrapper ] [ switcher ] [ step--1 ]">
+          <div>
+            <a rel="external" href="https://idrc.ocadu.ca/">
+              An Inclusive Design Research Centre Project
+            </a>
+          </div>
+          <ul role="list" class="[ flex ]" data-grow="false" data-separator="/">
+            <li>
+              <a href="/" lang="en-CA" hreflang="en-CA" aria-current="page"
+                >English</a
+              >
+            </li>
+            <li>
+              <a href="/fr/" lang="fr-CA" hreflang="fr-CA">Français</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    <div class="[ wrapper ]">
+      <div class="[ brand ]">
+              <a rel="home" href="/" aria-label="Financial Inclusion and Resilience Movement"> {{ include 'svg/firm-wordmark.svg' }} </a>
+      </div>
+    </div>
+    <incd-nav>
+      <nav class="[ navigation ]" aria-label="Menu Navigation">
+        <div class="[ wrapper ]">
+          <div class="[ menu-toggle ]">
+            <a
+              class="button"
+              href="/menu/"
+              aria-label="Open menu"
+            >
+              <svg
+                role="presentation"
+                class="open icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="45"
+                height="44"
+                fill="none"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="4"
+                  d="M6 22h33M6 11h33M6 33h33"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <ul role="list">
+            <li>
+              <a class="link" aria-current="page" href="/#about">About</a>
+              <ul role="list">
+                <li>
+                  <a
+                    class="link"
+                    href="/#governance"
+                    >Governance</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+              <li>
+                  <a class="link" href="/#events-and-activities">Events and Activities</a>
+              </li>
+
+            <li>
+              <a class="link" href="/#knowledge-hub">Knowledge Hub</a>
+              <ul role="list">
+                <li>
+                  <a class="link" href="/#submit-resources"
+                    >Submit Resources</a
+                  >
+                </li>
+
+                <li>
+                  <a class="link" href="/#resources"
+                    >Member and Patron Resources</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a class="link" href="/#members">Members</a>
+              <ul role="list">
+                <li>
+                  <a class="link" href="/#organization-directory"
+                    >Organization Directory</a
+                  >
+                </li>
+
+                <li>
+                  <a class="link" href="/#shared-services"
+                    >Shared Services</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="link" href="/#patrons">Patrons</a>
+              <ul role="list">
+                <li>
+                  <a class="link" href="/#mailing-lis"
+                    >Mailing List</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </incd-nav>
     </header>
     <main class="[ flow ] [ prose ]">
-        <div class="[ flow ] [ hero ] [ region ]">
-            <div class="[ wrapper ]">
-                <h1>{{ title }}</h1>
-            </div>
+      <div class="[ flow ] [ hero ] [ region ]">
+        <div class="[ wrapper ]">
+          <h1>{{ title }}</h1>
         </div>
-        <div class="[ flow ] [ region ] [ wrapper ]">
-            {{ content }}
-            <nav class="[ pagination ] [ repel ]" aria-label="pagination">
-                <a href="#"><svg class="icon" role="presentation" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15" width="14" height="15" aria-hidden="true" focusable="false"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.491" d="M13 7.5H1"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.491" d="m7 13.5-6-6 6-6"></path></svg> Previous</a>
-                <a href="#">Next <svg class="icon" role="presentation" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 15" width="14" height="15" aria-hidden="true" focusable="false"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.491" d="M1 7.5h12m0 0-6-6m6 6-6 6"></path></svg></a>
-            </nav>
-        </div>
+      </div>
+      <div class="[ flow ] [ region ] [ wrapper ]">
+        {{ content }}
+        <nav class="[ pagination ] [ repel ]" aria-label="pagination">
+          <a href="#"
+            ><svg
+              class="icon"
+              role="presentation"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 15"
+              width="14"
+              height="15"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.491"
+                d="M13 7.5H1"
+              ></path>
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.491"
+                d="m7 13.5-6-6 6-6"
+              ></path>
+            </svg>
+            Previous</a
+          >
+          <a href="#"
+            >Next
+            <svg
+              class="icon"
+              role="presentation"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 15"
+              width="14"
+              height="15"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.491"
+                d="M1 7.5h12m0 0-6-6m6 6-6 6"
+              ></path></svg
+          ></a>
+        </nav>
+      </div>
     </main>
-    <footer class="[ region ] [ step--1 ] [ inverse ]">
-        <div class="[ switcher ] [ wrapper ]">
-            <div class="[ flow ]">
-                <h2 class="[ h4 ]" >Contact Us</h2>
-                <h3 class="[ h5 ]">Email</h3>
-                <div>
-                    <a href="mailto:idrc@ocadu.ca">idrc@ocadu.ca</a>
-                </div>
-                <h3 class="[ h5 ]">Phone</h3>
-                <div>
-                    <a href="tel:(416) 977-6000 x3967">(416) 977-6000 x3967</a>
-                </div>
-                <h3 class="[ h5 ]">Address</h3>
-                <address>
-                    <p>Inclusive Design Research Centre<br>
-                        205 Richmond Street West, 2nd Floor<br />
-                        Toronto, ON M5V 1V3</p>
-                </address>
-            </div>
-            <div class="[ flow ]">
-                <div class="[ grid-auto ]">
-                    <a href="https://idrc.ocadu.ca/" rel="external">{{ include 'svg/idrc.svg' }}</a>
-                    <a href="https://ocadu.ca/" rel="external">{{ include 'svg/ocadu.svg' }}</a>
-                </div>
-            </div>
-            <div>
-                <p>Funded in part by the Government of Canada's Social Development Partnerships Program.</p>
-            </div>
-            <div>
-                <p>Published under a CC-BY-NC 4.0 License</p>
-            </div>
-        </div>
-    </footer>
-</body>
+    {{ include 'layouts/partials/footer.vto' }}
+    {{ include 'layouts/partials/sw.vto' }}
+  </body>
 </html>

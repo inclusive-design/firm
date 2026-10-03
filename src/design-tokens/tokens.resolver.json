@@ -40,6 +40,9 @@
           "$ref": "./space.json"
         },
         {
+          "$ref": "./space-fluid.json"
+        },
+        {
           "$ref": "./typography.json"
         }
       ]

@@ -87,12 +87,18 @@
           "default": {
             "$value": "{color.neutral.700}"
           },
+          "hover": {
+            "$value": "{color.neutral.700}"
+          },
           "focus": {
             "$value": "{color.primary.800}"
           }
         },
         "content": {
           "default": {
+            "$value": "{color.primary.400}"
+          },
+          "hover": {
             "$value": "{color.primary.400}"
           },
           "focus": {
@@ -180,11 +186,11 @@
           }
         },
         "border": {
-          "default": {
-            "$value": "{color.alpha.transparent}"
-          },
           "focus": {
             "$value": "{color.neutral.800}"
+          },
+          "default": {
+            "$value": "{color.alpha.transparent}"
           },
           "hover": {
             "$value": "{color.primary.400}"
