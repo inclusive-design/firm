@@ -1,5 +1,7 @@
 # FIRM Design System
 
+**Moved to [inclusive-design/financial-inclusion.ca](https://github.com/inclusive-design/financial-inclusion.ca).**
+
 ## Exporting from Figma
 
 We use the [Tokens Brücke](https://github.com/tokens-bruecke/figma-plugin) plugin
